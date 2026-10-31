@@ -109,15 +109,19 @@ def main():
     print(f"{len(rows)} domains, {sum(counts.values())} queries: "
           + ", ".join(f"{summary[s]} {s}" for s in ("standard", "strict", "protected", "unknown")))
     print()
+    shown = [row for row in rows if args.all or row[0] == "unknown"]
+    if not shown:
+        print("No unknown domains: every domain is either blocked or protected.")
+        print("Run again with --all to see the full list.")
+        return
     print(f"{'status':<10} {'queries':>7}  domain")
-    for status, n, domain in rows:
-        if status != "unknown" and not args.all:
-            continue
+    for status, n, domain in shown:
         mark = "?" if status == "unknown" and HINT.search(domain) else " "
         print(f"{status:<10} {n:>7} {mark}{domain}")
-    print()
-    print("'?' = name suggests ads or tracking. Check what breaks before adding it to sources/,")
-    print("and add domains the TV needs to sources/never-block.txt.")
+    if summary["unknown"]:
+        print()
+        print("'?' = name suggests ads or tracking. Check what breaks before adding it to sources/,")
+        print("and add domains the TV needs to sources/never-block.txt.")
 
 
 if __name__ == "__main__":
