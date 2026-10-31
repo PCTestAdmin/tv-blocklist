@@ -12,7 +12,6 @@ would hit a protected domain, so upstream can never break what we protect.
 
 Usage:  python scripts/update_upstream.py
 """
-import datetime
 import re
 import sys
 import urllib.request
@@ -74,7 +73,6 @@ def write(path, header, rules):
 
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
-    today = datetime.date.today().isoformat()
     for src in UPSTREAM:
         std_block, std_allow, std_skip = parse(fetch(src["standard"]))
         strict_block, strict_allow, strict_skip = parse(fetch(src["strict"]))
@@ -87,7 +85,7 @@ def main():
         def header(title):
             return [
                 f"# {src['name']}: {title}",
-                f"# Imported from {src['home']} on {today} by scripts/update_upstream.py.",
+                f"# Imported from {src['home']} by scripts/update_upstream.py.",
                 f"# Licence: {src['license']}. Do not edit by hand.",
             ]
 

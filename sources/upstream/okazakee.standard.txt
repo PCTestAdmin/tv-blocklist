@@ -1,5 +1,5 @@
 # okazakee: standard tier
-# Imported from https://github.com/Okazakee/tv-dns-blocklist on 2026-10-31 by scripts/update_upstream.py.
+# Imported from https://github.com/Okazakee/tv-dns-blocklist by scripts/update_upstream.py.
 # Licence: MIT, Copyright (c) 2026 okazakee. Do not edit by hand.
 ndmdhs.com
 samba.tv
