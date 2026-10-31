@@ -1,0 +1,9 @@
+# Sony Bravia: Telemetrie
+ad8641f3cff742de893d919add74c2bb.ssm1.internet.sony.tv
+ad8641f3cff742de893d919add74c2bb.ssm2.internet.sony.tv
+api-mf1.meta.ndmdhs.com
+b02.black.ndmdhs.com
+bdcore-apr-lb.bda.ndmdhs.com
+tvsideviewandroidv2-cfgdst-ore-pro.bda.ndmdhs.com
+call.me.sel.sony.com
+facemap.foldlife.net

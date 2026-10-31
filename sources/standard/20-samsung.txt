@@ -1,4 +1,4 @@
-# Samsung Tizen: Werbung, ACR und Werbe-Banner im Smart Hub
+# Samsung Tizen: Werbung, ACR, Werbe-Banner im Smart Hub und Telemetrie
 samsungads.com
 samsungacr.com
 samsungadhub.com
@@ -7,3 +7,10 @@ gamespromotion.samsungcloudsolution.com
 notice.samsungcloudsolution.com
 noticecdn.samsungcloudsolution.com
 noticefile.samsungcloudsolution.com
+prderrordumphsm.samsungcloudsolution.com
+musicid.samsungcloudsolution.com
+log.internetat.tv
+game.internetat.tv
+connecttv.pelmorex.com
+premium-videos.telly.com
+i-stream.pl

@@ -1,0 +1,12 @@
+# Roku, Amazon Fire TV, Xiaomi Mi TV, Foxtel: Werbung und Telemetrie
+logs.roku.com
+display.ravm.tv
+ads.roku.com
+aax-eu.amazon-adsystem.com
+mads-eu.amazon.com
+device-metrics-us.amazon.com
+mobileanalytics.us-east-1.amazonaws.com
+notify.firetv.bugsnag.appstore.a2z.com
+tracking.intl.miui.com
+sdkconfig.ad.intl.xiaomi.com
+foxtel-prod-events.digitalsmiths.net

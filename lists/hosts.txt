@@ -2,28 +2,34 @@
 # Description: Werbung, ACR und Tracking auf Smart-TVs. Sicher für den Alltag.
 # Homepage: https://github.com/PCTestAdmin/tv-blocklist
 # Version: 2026.10.31
-# Rules: 35
+# Rules: 119
 # License: MIT
 
-# Herstellerübergreifend: TV-Werbenetzwerke und ACR (Inhaltserkennung: der Fernseher meldet, was du schaust)
+# Herstellerübergreifend: ACR (Inhaltserkennung) und TV-Werbenetzwerke
+0.0.0.0 alphonso.tv
+0.0.0.0 flingo.tv
+0.0.0.0 api.thetake.com
+0.0.0.0 yumenetworks.com
 0.0.0.0 smartclip.com
 0.0.0.0 smartclip.net
-0.0.0.0 yumenetworks.com
-0.0.0.0 alphonso.tv
-0.0.0.0 api.thetake.com
-0.0.0.0 flingo.tv
+0.0.0.0 ads.aimitv.com
+0.0.0.0 adv.ettoday.net
 0.0.0.0 api.cid.samba.tv
 0.0.0.0 events.cid.samba.tv
 0.0.0.0 platform.cid.samba.tv
+0.0.0.0 preferences.cid.samba.tv
 0.0.0.0 control.tvinteractive.tv
 0.0.0.0 control2.tvinteractive.tv
 0.0.0.0 mcp.tvinteractive.tv
 0.0.0.0 tvmeta-dynamic.tvinteractive.tv
+0.0.0.0 control-zoo-dai-default.tvinteractive.tv
+0.0.0.0 secure-eu.imrworldwide.com
 
-# Hisense / VIDAA (auch Smart Tech, Toshiba): Werbe-Empfehlungen auf dem Startbildschirm
+# Hisense / VIDAA (auch Smart Tech, Toshiba): Werbe-Empfehlungen und Protokoll-Upload
 0.0.0.0 recommend-ui-eu.vidaahub.com
+0.0.0.0 policy-jrnl-eu.vidaahub.com
 
-# Samsung Tizen: Werbung, ACR und Werbe-Banner im Smart Hub
+# Samsung Tizen: Werbung, ACR, Werbe-Banner im Smart Hub und Telemetrie
 0.0.0.0 samsungads.com
 0.0.0.0 samsungacr.com
 0.0.0.0 samsungadhub.com
@@ -32,22 +38,108 @@
 0.0.0.0 notice.samsungcloudsolution.com
 0.0.0.0 noticecdn.samsungcloudsolution.com
 0.0.0.0 noticefile.samsungcloudsolution.com
+0.0.0.0 prderrordumphsm.samsungcloudsolution.com
+0.0.0.0 musicid.samsungcloudsolution.com
+0.0.0.0 log.internetat.tv
+0.0.0.0 game.internetat.tv
+0.0.0.0 connecttv.pelmorex.com
+0.0.0.0 premium-videos.telly.com
+0.0.0.0 i-stream.pl
 
-# LG webOS: Werbung auf Startbildschirm und im Content Store
+# LG webOS: Werbung, ACR und Datensammlung (Customer Data Platform)
 0.0.0.0 lgsmartad.com
 0.0.0.0 ad.lgappstv.com
+0.0.0.0 ibis.lgappstv.com
+0.0.0.0 ibs.lgappstv.com
 0.0.0.0 lgad.cjpowercast.com.edgesuite.net
+0.0.0.0 aic-ngfts.lge.com
+0.0.0.0 us.cdpbeacon.lgtvcommon.com
+0.0.0.0 us.cdpsvc.lgtvcommon.com
+0.0.0.0 us.rdl.lgtvcommon.com
+0.0.0.0 aic.cdpbeacon.lgtvcommon.com
+0.0.0.0 aic.cdpsvc.lgtvcommon.com
+0.0.0.0 aic.rdl.lgtvcommon.com
 
-# Philips, Panasonic, Toshiba, Roku, Xiaomi: Werbung und ACR
-0.0.0.0 ad.nettvservices.com
+# Sony Bravia: Telemetrie
+0.0.0.0 ad8641f3cff742de893d919add74c2bb.ssm1.internet.sony.tv
+0.0.0.0 ad8641f3cff742de893d919add74c2bb.ssm2.internet.sony.tv
+0.0.0.0 api-mf1.meta.ndmdhs.com
+0.0.0.0 b02.black.ndmdhs.com
+0.0.0.0 bdcore-apr-lb.bda.ndmdhs.com
+0.0.0.0 tvsideviewandroidv2-cfgdst-ore-pro.bda.ndmdhs.com
+0.0.0.0 call.me.sel.sony.com
+0.0.0.0 facemap.foldlife.net
+
+# Panasonic Viera: Nutzungsstatistik
+0.0.0.0 0077777700140002.myhomescreen.tv
+0.0.0.0 collect.myhomescreen.tv
+0.0.0.0 usage.myhomescreen.tv
+0.0.0.0 collect-eu-fy2014.myhomescreen.tv
+0.0.0.0 usage-eu-fy2014.myhomescreen.tv
+0.0.0.0 collect-eu-fy2015.myhomescreen.tv
+0.0.0.0 usage-eu-fy2015.myhomescreen.tv
+0.0.0.0 collect-eu-fy2016.myhomescreen.tv
+0.0.0.0 usage-eu-fy2016.myhomescreen.tv
+0.0.0.0 collect-eu-fy2017.myhomescreen.tv
+0.0.0.0 usage-eu-fy2017.myhomescreen.tv
+0.0.0.0 collect-eu-fy2018.myhomescreen.tv
+0.0.0.0 usage-eu-fy2018.myhomescreen.tv
+0.0.0.0 collect-eu-fy2019.myhomescreen.tv
+0.0.0.0 usage-eu-fy2019.myhomescreen.tv
+0.0.0.0 collect-eu-fy2020.myhomescreen.tv
+0.0.0.0 usage-eu-fy2020.myhomescreen.tv
+0.0.0.0 collect-eu-fy2021.myhomescreen.tv
+0.0.0.0 usage-eu-fy2021.myhomescreen.tv
+0.0.0.0 collect-eu-fy2022.myhomescreen.tv
+0.0.0.0 usage-eu-fy2022.myhomescreen.tv
+0.0.0.0 collect-us-fy2014.myhomescreen.tv
+0.0.0.0 usage-us-fy2014.myhomescreen.tv
+0.0.0.0 collect-us-fy2015.myhomescreen.tv
+0.0.0.0 usage-us-fy2015.myhomescreen.tv
+0.0.0.0 collect-us-fy2016.myhomescreen.tv
+0.0.0.0 usage-us-fy2016.myhomescreen.tv
+0.0.0.0 collect-us-fy2017.myhomescreen.tv
+0.0.0.0 usage-us-fy2017.myhomescreen.tv
+0.0.0.0 collect-us-fy2018.myhomescreen.tv
+0.0.0.0 usage-us-fy2018.myhomescreen.tv
+0.0.0.0 collect-us-fy2019.myhomescreen.tv
+0.0.0.0 usage-us-fy2019.myhomescreen.tv
+0.0.0.0 collect-us-fy2020.myhomescreen.tv
+0.0.0.0 usage-us-fy2020.myhomescreen.tv
+0.0.0.0 collect-us-fy2021.myhomescreen.tv
+0.0.0.0 usage-us-fy2021.myhomescreen.tv
+0.0.0.0 collect-us-fy2022.myhomescreen.tv
+0.0.0.0 usage-us-fy2022.myhomescreen.tv
 0.0.0.0 vindicosuite.com
+
+# Philips und Toshiba: Werbung und Telemetrie
+0.0.0.0 ad.nettvservices.com
 0.0.0.0 7345023508.fxmconnect.com
 0.0.0.0 7345023508.fxm9485766783.com
-0.0.0.0 display.ravm.tv
-0.0.0.0 sdkconfig.ad.intl.xiaomi.com
 
-# HbbTV (roter Knopf): Werbe-Proxy und Tracking deutscher Sender
+# Roku, Amazon Fire TV, Xiaomi Mi TV, Foxtel: Werbung und Telemetrie
+0.0.0.0 logs.roku.com
+0.0.0.0 display.ravm.tv
+0.0.0.0 ads.roku.com
+0.0.0.0 aax-eu.amazon-adsystem.com
+0.0.0.0 mads-eu.amazon.com
+0.0.0.0 device-metrics-us.amazon.com
+0.0.0.0 mobileanalytics.us-east-1.amazonaws.com
+0.0.0.0 notify.firetv.bugsnag.appstore.a2z.com
+0.0.0.0 tracking.intl.miui.com
+0.0.0.0 sdkconfig.ad.intl.xiaomi.com
+0.0.0.0 foxtel-prod-events.digitalsmiths.net
+
+# HbbTV (roter Knopf): Werbe-Proxy und Tracking
 0.0.0.0 redbutton-adproxy-lb-prod.redbutton.de
 0.0.0.0 hbbtv-track.redbutton.de
+0.0.0.0 hse24.tvtelemetrie.de
 0.0.0.0 ad.71i.de
 0.0.0.0 tracksrv.zdf.de
+0.0.0.0 script.ioam.de
+0.0.0.0 de.ioam.de
+0.0.0.0 config.ioam.de
+
+# Streaming-Apps: Telemetrie
+0.0.0.0 ichnaea.netflix.com
+0.0.0.0 logs.netflix.com

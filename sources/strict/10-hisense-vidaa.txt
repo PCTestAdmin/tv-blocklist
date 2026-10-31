@@ -1,6 +1,0 @@
-# Hisense / VIDAA: Telemetrie. Anmeldung, App-Store und Startbildschirm bleiben erreichbar (siehe never-block.txt).
-api-gps-em.hismarttv.com
-api-gps-na.hismarttv.com
-msg-em.hismarttv.com
-msg-na.hismarttv.com
-unified-ter-na.hismarttv.com

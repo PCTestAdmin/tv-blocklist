@@ -1,0 +1,15 @@
+# HbbTV-Apps privater Sender und Shopping-Kanäle (Einblend-Werbung). Der rote Knopf dieser Sender funktioniert dann nicht mehr.
+hbbtv.kabeleins.de
+hbbtv.sat1.de
+hbbtv.sixx.de
+hbbtv.rtl2.de
+hbbtv.superrtl.de
+p-hbbtv.superrtl.de
+start.digitaltext.rtl.de
+hbbtv.qvc.de
+app.hbbtv.hse24.com
+hse-ctv.com
+hbbtvapp.sonnenklar.tv
+hbbtv01p.anixe.net
+database01p.anixe.net
+hbbtv-1.eurosport.com

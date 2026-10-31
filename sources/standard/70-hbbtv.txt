@@ -1,0 +1,9 @@
+# HbbTV (roter Knopf): Werbe-Proxy und Tracking
+redbutton-adproxy-lb-prod.redbutton.de
+hbbtv-track.redbutton.de
+hse24.tvtelemetrie.de
+ad.71i.de
+tracksrv.zdf.de
+script.ioam.de
+de.ioam.de
+config.ioam.de

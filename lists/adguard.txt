@@ -2,28 +2,34 @@
 ! Description: Werbung, ACR und Tracking auf Smart-TVs. Sicher für den Alltag.
 ! Homepage: https://github.com/PCTestAdmin/tv-blocklist
 ! Version: 2026.10.31
-! Rules: 35
+! Rules: 119
 ! License: MIT
 
-! Herstellerübergreifend: TV-Werbenetzwerke und ACR (Inhaltserkennung: der Fernseher meldet, was du schaust)
+! Herstellerübergreifend: ACR (Inhaltserkennung) und TV-Werbenetzwerke
+||alphonso.tv^
+||flingo.tv^
+||api.thetake.com^
+||yumenetworks.com^
 ||smartclip.com^
 ||smartclip.net^
-||yumenetworks.com^
-||alphonso.tv^
-||api.thetake.com^
-||flingo.tv^
+||ads.aimitv.com^
+||adv.ettoday.net^
 ||api.cid.samba.tv^
 ||events.cid.samba.tv^
 ||platform.cid.samba.tv^
+||preferences.cid.samba.tv^
 ||control.tvinteractive.tv^
 ||control2.tvinteractive.tv^
 ||mcp.tvinteractive.tv^
 ||tvmeta-dynamic.tvinteractive.tv^
+||control-zoo-dai-default.tvinteractive.tv^
+||secure-eu.imrworldwide.com^
 
-! Hisense / VIDAA (auch Smart Tech, Toshiba): Werbe-Empfehlungen auf dem Startbildschirm
+! Hisense / VIDAA (auch Smart Tech, Toshiba): Werbe-Empfehlungen und Protokoll-Upload
 ||recommend-ui-eu.vidaahub.com^
+||policy-jrnl-eu.vidaahub.com^
 
-! Samsung Tizen: Werbung, ACR und Werbe-Banner im Smart Hub
+! Samsung Tizen: Werbung, ACR, Werbe-Banner im Smart Hub und Telemetrie
 ||samsungads.com^
 ||samsungacr.com^
 ||samsungadhub.com^
@@ -32,22 +38,108 @@
 ||notice.samsungcloudsolution.com^
 ||noticecdn.samsungcloudsolution.com^
 ||noticefile.samsungcloudsolution.com^
+||prderrordumphsm.samsungcloudsolution.com^
+||musicid.samsungcloudsolution.com^
+||log.internetat.tv^
+||game.internetat.tv^
+||connecttv.pelmorex.com^
+||premium-videos.telly.com^
+||i-stream.pl^
 
-! LG webOS: Werbung auf Startbildschirm und im Content Store
+! LG webOS: Werbung, ACR und Datensammlung (Customer Data Platform)
 ||lgsmartad.com^
 ||ad.lgappstv.com^
+||ibis.lgappstv.com^
+||ibs.lgappstv.com^
 ||lgad.cjpowercast.com.edgesuite.net^
+||aic-ngfts.lge.com^
+||us.cdpbeacon.lgtvcommon.com^
+||us.cdpsvc.lgtvcommon.com^
+||us.rdl.lgtvcommon.com^
+||aic.cdpbeacon.lgtvcommon.com^
+||aic.cdpsvc.lgtvcommon.com^
+||aic.rdl.lgtvcommon.com^
 
-! Philips, Panasonic, Toshiba, Roku, Xiaomi: Werbung und ACR
-||ad.nettvservices.com^
+! Sony Bravia: Telemetrie
+||ad8641f3cff742de893d919add74c2bb.ssm1.internet.sony.tv^
+||ad8641f3cff742de893d919add74c2bb.ssm2.internet.sony.tv^
+||api-mf1.meta.ndmdhs.com^
+||b02.black.ndmdhs.com^
+||bdcore-apr-lb.bda.ndmdhs.com^
+||tvsideviewandroidv2-cfgdst-ore-pro.bda.ndmdhs.com^
+||call.me.sel.sony.com^
+||facemap.foldlife.net^
+
+! Panasonic Viera: Nutzungsstatistik
+||0077777700140002.myhomescreen.tv^
+||collect.myhomescreen.tv^
+||usage.myhomescreen.tv^
+||collect-eu-fy2014.myhomescreen.tv^
+||usage-eu-fy2014.myhomescreen.tv^
+||collect-eu-fy2015.myhomescreen.tv^
+||usage-eu-fy2015.myhomescreen.tv^
+||collect-eu-fy2016.myhomescreen.tv^
+||usage-eu-fy2016.myhomescreen.tv^
+||collect-eu-fy2017.myhomescreen.tv^
+||usage-eu-fy2017.myhomescreen.tv^
+||collect-eu-fy2018.myhomescreen.tv^
+||usage-eu-fy2018.myhomescreen.tv^
+||collect-eu-fy2019.myhomescreen.tv^
+||usage-eu-fy2019.myhomescreen.tv^
+||collect-eu-fy2020.myhomescreen.tv^
+||usage-eu-fy2020.myhomescreen.tv^
+||collect-eu-fy2021.myhomescreen.tv^
+||usage-eu-fy2021.myhomescreen.tv^
+||collect-eu-fy2022.myhomescreen.tv^
+||usage-eu-fy2022.myhomescreen.tv^
+||collect-us-fy2014.myhomescreen.tv^
+||usage-us-fy2014.myhomescreen.tv^
+||collect-us-fy2015.myhomescreen.tv^
+||usage-us-fy2015.myhomescreen.tv^
+||collect-us-fy2016.myhomescreen.tv^
+||usage-us-fy2016.myhomescreen.tv^
+||collect-us-fy2017.myhomescreen.tv^
+||usage-us-fy2017.myhomescreen.tv^
+||collect-us-fy2018.myhomescreen.tv^
+||usage-us-fy2018.myhomescreen.tv^
+||collect-us-fy2019.myhomescreen.tv^
+||usage-us-fy2019.myhomescreen.tv^
+||collect-us-fy2020.myhomescreen.tv^
+||usage-us-fy2020.myhomescreen.tv^
+||collect-us-fy2021.myhomescreen.tv^
+||usage-us-fy2021.myhomescreen.tv^
+||collect-us-fy2022.myhomescreen.tv^
+||usage-us-fy2022.myhomescreen.tv^
 ||vindicosuite.com^
+
+! Philips und Toshiba: Werbung und Telemetrie
+||ad.nettvservices.com^
 ||7345023508.fxmconnect.com^
 ||7345023508.fxm9485766783.com^
-||display.ravm.tv^
-||sdkconfig.ad.intl.xiaomi.com^
 
-! HbbTV (roter Knopf): Werbe-Proxy und Tracking deutscher Sender
+! Roku, Amazon Fire TV, Xiaomi Mi TV, Foxtel: Werbung und Telemetrie
+||logs.roku.com^
+||display.ravm.tv^
+||ads.roku.com^
+||aax-eu.amazon-adsystem.com^
+||mads-eu.amazon.com^
+||device-metrics-us.amazon.com^
+||mobileanalytics.us-east-1.amazonaws.com^
+||notify.firetv.bugsnag.appstore.a2z.com^
+||tracking.intl.miui.com^
+||sdkconfig.ad.intl.xiaomi.com^
+||foxtel-prod-events.digitalsmiths.net^
+
+! HbbTV (roter Knopf): Werbe-Proxy und Tracking
 ||redbutton-adproxy-lb-prod.redbutton.de^
 ||hbbtv-track.redbutton.de^
+||hse24.tvtelemetrie.de^
 ||ad.71i.de^
 ||tracksrv.zdf.de^
+||script.ioam.de^
+||de.ioam.de^
+||config.ioam.de^
+
+! Streaming-Apps: Telemetrie
+||ichnaea.netflix.com^
+||logs.netflix.com^

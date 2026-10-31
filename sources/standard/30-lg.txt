@@ -1,4 +1,13 @@
-# LG webOS: Werbung auf Startbildschirm und im Content Store
+# LG webOS: Werbung, ACR und Datensammlung (Customer Data Platform)
 lgsmartad.com
 ad.lgappstv.com
+ibis.lgappstv.com
+ibs.lgappstv.com
 lgad.cjpowercast.com.edgesuite.net
+aic-ngfts.lge.com
+us.cdpbeacon.lgtvcommon.com
+us.cdpsvc.lgtvcommon.com
+us.rdl.lgtvcommon.com
+aic.cdpbeacon.lgtvcommon.com
+aic.cdpsvc.lgtvcommon.com
+aic.rdl.lgtvcommon.com

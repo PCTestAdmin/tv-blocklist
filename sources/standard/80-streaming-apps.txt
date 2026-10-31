@@ -1,0 +1,3 @@
+# Streaming-Apps: Telemetrie
+ichnaea.netflix.com
+logs.netflix.com

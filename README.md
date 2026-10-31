@@ -43,16 +43,20 @@ Für **AdGuard Home** und **Pi-hole**.
 
 ## Welche Liste?
 
-| | **Standard** | **Streng** |
+| | **Standard** (~120 Regeln) | **Streng** (~155 Regeln) |
 |---|---|---|
-| Werbung auf dem Startbildschirm | ✅ | ✅ |
+| Werbung und Werbe-Banner auf dem Startbildschirm | ✅ | ✅ |
 | ACR-Tracking (was du schaust) | ✅ | ✅ |
-| HbbTV-Werbung und -Tracking | ✅ | ✅ |
-| Hersteller-Telemetrie, Fehlerberichte, Nutzungsstatistik | – | ✅ |
-| Reichweitenmessung in Mediatheken | – | ✅ |
+| Hersteller-Telemetrie, Fehlerberichte, Nutzungsstatistik | ✅ | ✅ |
+| HbbTV-Werbung, Tracking und Reichweitenmessung | ✅ | ✅ |
+| Empfehlungsreihen auf LG- und Google-TV-Startseiten | – | ✅ |
+| HbbTV-Apps privater Sender und Shopping-Kanäle | – | ✅ |
+| Telemetrie mit unklarem Zweck | – | ✅ |
 | Anmeldung, App-Store, Apps, Updates | nie gesperrt | nie gesperrt |
 
-**Empfehlung:** Mit **Standard** anfangen. Läuft alles ein paar Tage problemlos, auf **Streng** wechseln.
+**Standard** hat keine bekannten Nebenwirkungen. **Streng** nimmt bewusst Funktionen weg: Empfehlungsreihen bleiben leer, und der rote Knopf von z. B. RTL II, SAT.1 oder QVC startet nicht mehr.
+
+**Empfehlung:** Mit **Standard** anfangen. Wer keine Empfehlungen und keine Sender-Einblendungen will, wechselt auf **Streng**.
 
 ### Alle Formate
 
@@ -77,16 +81,21 @@ Viele TV-Blocklisten sperren ganze Hersteller-Domains und legen damit Anmeldung,
 
 | Hersteller / System | Standard | Streng |
 |---|---|---|
-| Samsung (Tizen) | Werbung, ACR, Smart-Hub-Banner | Fehlerberichte, Musikerkennung |
-| LG (webOS) | Werbung, ACR (Alphonso) | Nutzungsstatistik |
-| Hisense / VIDAA (auch Smart Tech, Toshiba) | Werbe-Empfehlungen auf dem Startbildschirm | Telemetrie |
-| Sony, Philips, Toshiba, TCL | ACR (Samba TV), Werbung | Telemetrie |
+| Samsung (Tizen) | Werbung, ACR, Smart-Hub-Banner, Fehlerberichte | – |
+| LG (webOS) | Werbung, ACR, Datensammlung (CDP) | Empfehlungsreihen |
+| Hisense / VIDAA (auch Smart Tech, Toshiba) | Werbe-Empfehlungen, Protokoll-Upload | Telemetrie |
+| Sony Bravia | Telemetrie, ACR (Samba TV) | Konfigurations-Telemetrie |
+| Panasonic Viera | Nutzungsstatistik, Werbung | Sicherheits-Telemetrie |
+| Philips, Toshiba, TCL | Werbung, ACR (Samba TV) | Portal-Telemetrie |
 | Vizio | ACR (Inscape) | – |
-| Panasonic, Roku, Xiaomi | Werbung | Statistik |
-| Amazon Fire TV | – | Statistik, Werbe-SDK |
-| HbbTV (deutsche Sender) | Werbe-Proxy, Tracking | Reichweitenmessung |
+| Roku, Amazon Fire TV, Xiaomi | Werbung, Telemetrie | Amazon-Protokolle |
+| Google TV / Android TV | – | Empfehlungsreihen |
+| HbbTV (deutsche Sender) | Werbe-Proxy, Tracking, Reichweitenmessung | Apps privater Sender |
+| Netflix | Telemetrie | – |
 
-**Hisense / VIDAA:** Getestet auf einem Smart Tech 55UV10V1 (Firmware V0302.01.00S.N0317). Gesperrt wird nur `recommend-ui-eu.vidaahub.com` (Empfehlungs-Kacheln). Alle anderen `vidaahub.com`-Dienste – Anmeldung, Startbildschirm, Uhrzeit, Region, Sprachsteuerung, Updates – stehen in der Schutzliste. Wer weitere eindeutige Werbedomains im Abfrageprotokoll findet: bitte melden!
+**Hisense / VIDAA:** Getestet auf einem Smart Tech 55UV10V1 (Firmware V0302.01.00S.N0317). Gesperrt werden die Empfehlungs-Kacheln (`recommend-ui-eu`) und der Protokoll-Upload (`policy-jrnl-eu`). Alle anderen `vidaahub.com`-Dienste – Anmeldung, Startbildschirm, Uhrzeit, Region, Sprachsteuerung, Updates – stehen in der Schutzliste. Wer weitere eindeutige Werbedomains im Abfrageprotokoll findet: bitte melden!
+
+**Warum nicht tausende Einträge?** Große Listen erreichen ihre Größe mit allgemeinen Werbe- und Tracking-Domains aus dem Web. Die gehören in eine normale Blockliste (z. B. HaGeZi), die du parallel nutzen kannst. Diese Liste enthält nur Domains, die Fernseher selbst aufrufen – und davon gibt es nur einige hundert.
 
 ## Wenn etwas nicht mehr geht
 

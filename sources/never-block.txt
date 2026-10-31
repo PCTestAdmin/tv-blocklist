@@ -41,6 +41,13 @@ otnprd11.samsungcloudsolution.net
 otn.samsungcloudcdn.com
 www.samsungotn.net
 infolink.pavv.co.kr
+acr0.samsungcloudsolution.com
+osb-ussvc.samsungqbe.com
+osb-eusvc.samsungqbe.com
+gpm.samsungqbe.com
+samsungrm.net
+ns11.whois.co.kr
+d1oxlq5h9kq8q5.cloudfront.net
 sso.internetat.tv
 multiscreen.samsung.com
 dev-multiscreen.samsung.com
@@ -49,6 +56,12 @@ dev-multiscreen.samsung.com
 lgtvsdp.com
 ngfts.lge.com
 snu.lge.com
+us.lgtvsdp.com
+jp.lgtvsdp.com
+ngfts.nextlgsdp.com
+de.nextlgsdp.com
+us.nextlgsdp.com
+us.service.lgtvcommon.com
 
 # Sony: Apps und Updates
 applicast.ga.sony.net
@@ -58,6 +71,8 @@ service.biv.sony.tv
 ssm1.internet.sony.tv
 ssm2.internet.sony.tv
 ssm3.internet.sony.tv
+portal.store.sonyentertainmentnetwork.com
+bravia.dl.playstation.net
 
 # Philips, Panasonic
 deviceportal.nettvservices.com
@@ -65,6 +80,14 @@ epg.corio.com
 vcs.vdspf.com
 mhc-ajax-eu.myhomescreen.tv
 mhc-xpana-eu.myhomescreen.tv
+mhc-ajax-eu-s2.myhomescreen.tv
+mhc-xpana-eu-s2.myhomescreen.tv
+mhc-eu.myhomescreen.tv
+mhc-us.myhomescreen.tv
+mhc-ajax-us.myhomescreen.tv
+mhc-xpana-us.myhomescreen.tv
+api.vizio.com
+images.vizio.com
 
 # Google TV / Android TV: Startbildschirm
 androidtvlauncherxfe-pa.googleapis.com
@@ -74,6 +97,11 @@ device-messaging-na.amazon.com
 mas-sdk.amazon.com
 mas-ext.amazon.com
 amazonadsi-a.akamaihd.net
+msh.amazon.co.uk
+softwareupdates.amazon.com
+api.amazonalexa.com
+avs.eu.amazonalexa.com
+ftv-smp.ntp-fireos.com
 
 # Xiaomi
 data.mistat.intl.xiaomi.com
@@ -86,11 +114,17 @@ nrdp.nccp.netflix.com
 nrdp.prod.ftl.netflix.com
 nrdp.prod.cloud.netflix.com
 cdn-0.nflximg.com
+uiboot.netflix.com
+nrdp.push.prod.netflix.com
 customerevents.netflix.com
 www.youtube.com
 youtubei.googleapis.com
 api-tv.spotify.com
 tv.deezer.com
+cdns-content.dzcdn.net
+tv-static.scdn.co
+apicache.vudu.com
+api.nfl.com
 
 # HbbTV / Mediatheken
 hbbtv.zdf.de
@@ -98,3 +132,5 @@ hbbtv.prosieben.de
 hbbtv.redbutton.de
 hbbtv.kika.de
 itv.ard.de
+hbbtv.3sat.de
+hbbtv.ard.de

@@ -1,0 +1,9 @@
+# Empfehlungen und Werbe-Kacheln auf Startseiten. Apps bleiben nutzbar, Empfehlungsreihen werden leer.
+us.recommend.lgtvcommon.com
+us.homeprv.lgtvcommon.com
+us.nudge.lgtvcommon.com
+us.rdx2.lgtvsdp.com
+jp.rdx2.lgtvsdp.com
+smartshare.lgtvsdp.com
+androidtvchannels-pa.googleapis.com
+androidtvwatsonfe-pa.googleapis.com
