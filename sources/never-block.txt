@@ -29,6 +29,9 @@ iot-voice-eu.vidaahub.com
 device-ecom.vidaahub.com
 sttc-iot.vidaahub.com
 sttc-bas.vidaahub.com
+app-tv.vidaahub.com
+partner.vidaahub.com
+img.vidaahub.com
 
 # Samsung: account, clock (without it Netflix/YouTube/Plex fail), updates, Smart Hub, TV Plus
 auth.samsungosp.com
@@ -118,6 +121,18 @@ nrdp.prod.cloud.netflix.com
 cdn-0.nflximg.com
 uiboot.netflix.com
 nrdp.push.prod.netflix.com
+nrdp51-appboot.netflix.com
+nrdp52-appboot.netflix.com
+nrdp-cell4.prod.ftl.netflix.com
+*.prod.partner.netflix.net
+# Netflix, YouTube and Prime Video content and image CDNs
+*.nflxso.net
+*.nflxvideo.net
+*.nflximg.net
+*.nflxext.com
+*.googlevideo.com
+*.ytimg.com
+*.media-amazon.com
 customerevents.netflix.com
 www.youtube.com
 youtubei.googleapis.com
