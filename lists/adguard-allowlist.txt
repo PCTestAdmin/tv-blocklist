@@ -2,12 +2,13 @@
 ! Description: Optional. Unblocks domains TVs need when other, broader lists block them.
 ! Homepage: https://github.com/PCTestAdmin/tv-blocklist
 ! Version: 2026.10.31
-! Rules: 221
+! Rules: 230
 ! License: MIT (see LICENSE for upstream credits)
 
 @@||account.samsung.com^$important
 @@||account.xiaomi.com^$important
 @@||acr0.samsungcloudsolution.com^$important
+@@||albedo.be.kidoodle.tv^$important
 @@||amazonadsi-a.akamaihd.net^$important
 @@||amzdigital-a.akamaihd.net^$important
 @@||androidtvlauncherxfe-pa.googleapis.com^$important
@@ -52,6 +53,8 @@
 @@||avs-alexa-18-na.amazon.com^$important
 @@||avs.eu.amazonalexa.com^$important
 @@||bravia.dl.playstation.net^$important
+@@||browserjs.core.cloud.vewd.com^$important
+@@||c.pki.goog^$important
 @@||castreceiver.vidaatv.net^$important
 @@||catalog-prod.smartcasttv.com^$important
 @@||cdn-0.nflximg.com^$important
@@ -145,6 +148,11 @@
 @@||nrdp52-appboot.netflix.com^$important
 @@||ns11.whois.co.kr^$important
 @@||nsu.lge.com^$important
+@@||ocsp.digicert.com^$important
+@@||ocsp.godaddy.com^$important
+@@||ocsp.pki.goog^$important
+@@||ocsp.rootca1.amazontrust.com^$important
+@@||ocsp.sectigo.com^$important
 @@||osb-apps-v2.samsungqbe.com^$important
 @@||osb-apps.samsungqbe.com^$important
 @@||osb-eusvc.samsungqbe.com^$important
@@ -163,6 +171,7 @@
 @@||platform.vizio.com^$important
 @@||playback-detail.sr.roku.com^$important
 @@||portal.store.sonyentertainmentnetwork.com^$important
+@@||prod-be-kidoodle-legacy-image.gcdn.co^$important
 @@||prod.cs.vizio.com^$important
 @@||prod.device-registration.external.plat.vizio.com^$important
 @@||prod.mobile.roku.com^$important

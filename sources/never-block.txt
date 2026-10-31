@@ -32,6 +32,7 @@ sttc-bas.vidaahub.com
 app-tv.vidaahub.com
 partner.vidaahub.com
 img.vidaahub.com
+appstore-vidaa.vidaahub.com
 
 # Samsung: account, clock (without it Netflix/YouTube/Plex fail), updates, Smart Hub, TV Plus
 auth.samsungosp.com
@@ -151,3 +152,18 @@ hbbtv.kika.de
 itv.ard.de
 hbbtv.3sat.de
 hbbtv.ard.de
+
+# Vewd (formerly Opera TV) app platform: browser compatibility scripts for TV apps
+browserjs.core.cloud.vewd.com
+
+# Kidoodle.TV (preinstalled kids' app on VIDAA): backend and images
+albedo.be.kidoodle.tv
+prod-be-kidoodle-legacy-image.gcdn.co
+
+# Certificate revocation checks (OCSP/CRL). Blocking them can make HTTPS connections fail.
+c.pki.goog
+ocsp.pki.goog
+ocsp.godaddy.com
+ocsp.rootca1.amazontrust.com
+ocsp.digicert.com
+ocsp.sectigo.com

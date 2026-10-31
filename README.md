@@ -99,6 +99,7 @@ Many TV blocklists block whole vendor clouds and break sign-in, the store or upd
 | **Xiaomi Mi TV** | Tracking, ad SDK | – |
 | **Google TV / Android TV** | – | Recommendation rows |
 | **HbbTV** (European broadcasters) | Ad proxy, tracking, audience measurement | Apps of commercial and shopping channels |
+| **Vewd** (app platform on VIDAA, Philips, Sony) | Logging | – |
 | **Streaming apps** | Netflix telemetry | – |
 
 **Hisense / VIDAA** is tested on a Smart Tech 55UV10V1 (firmware V0302.01.00S.N0317). Every other `vidaahub.com` service, including sign-in, home screen, clock, region, voice, payments and updates, is on the protection list.

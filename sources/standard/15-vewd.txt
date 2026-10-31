@@ -1,0 +1,2 @@
+# Vewd (formerly Opera TV) app platform on VIDAA, Philips, Sony and others: logging
+log.core.cloud.vewd.com

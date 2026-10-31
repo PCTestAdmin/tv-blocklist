@@ -2,7 +2,7 @@
 ! Description: Smart-TV ads, ACR tracking and telemetry. No known side effects.
 ! Homepage: https://github.com/PCTestAdmin/tv-blocklist
 ! Version: 2026.10.31
-! Rules: 281
+! Rules: 282
 ! License: MIT (see LICENSE for upstream credits)
 
 ! Cross-vendor: ACR (automatic content recognition) and TV ad networks
@@ -32,6 +32,9 @@
 ||policy-jrnl-*.vidaahub.com^
 ||ter-jrnl-*.vidaahub.com^
 ||exc-jrnl-*.vidaahub.com^
+
+! Vewd (formerly Opera TV) app platform on VIDAA, Philips, Sony and others: logging
+||log.core.cloud.vewd.com^
 
 ! Samsung Tizen: ads, ACR, Smart Hub banners and telemetry
 ||samsungads.com^
