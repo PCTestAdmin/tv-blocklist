@@ -20,3 +20,4 @@ tvmeta-dynamic.tvinteractive.tv
 control-zoo-dai-default.tvinteractive.tv
 # Nielsen (TV audience measurement)
 secure-eu.imrworldwide.com
+dis.inscape.tv

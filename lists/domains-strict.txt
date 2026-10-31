@@ -2,7 +2,7 @@
 # Description: Standard plus home-screen recommendations, broadcaster HbbTV apps and telemetry of unclear purpose. Removes some features.
 # Homepage: https://github.com/PCTestAdmin/tv-blocklist
 # Version: 2026.10.31
-# Rules: 386
+# Rules: 410
 # License: MIT (see LICENSE for upstream credits)
 
 # Cross-vendor: ACR (automatic content recognition) and TV ad networks
@@ -24,6 +24,7 @@ mcp.tvinteractive.tv
 tvmeta-dynamic.tvinteractive.tv
 control-zoo-dai-default.tvinteractive.tv
 secure-eu.imrworldwide.com
+dis.inscape.tv
 
 # Hisense / VIDAA (also Smart Tech, Toshiba): ad recommendations and log upload
 recommend-ui-eu.vidaahub.com
@@ -48,6 +49,19 @@ game.internetat.tv
 connecttv.pelmorex.com
 premium-videos.telly.com
 i-stream.pl
+samsungads.net
+samsungadhub.net
+ads.samsung.com
+analytics.bigdata.samsung.com
+analytics.samsungedo.com
+event-tracking.samsung.com
+nmetrics.samsung.com
+smetrics.samsung.com
+diagmon-policy.samsungdm.com
+diagmon-serviceapi.samsungdm.com
+report.gras.samsungdm.com
+us-report.gras.samsungdm.com
+musicid.samsungcloudsolution.net
 
 # LG webOS: ads, ACR and customer data platform
 lgsmartad.com
@@ -308,6 +322,8 @@ us.nudge.lgtvcommon.com
 smartshare.lgtvsdp.com
 androidtvchannels-pa.googleapis.com
 androidtvwatsonfe-pa.googleapis.com
+eu-api.samsungyosemite.com
+uk-api.samsungyosemite.com
 
 # HbbTV apps of commercial and shopping channels (overlay ads). The red button of these channels stops working.
 hbbtv.kabeleins.de
@@ -339,6 +355,14 @@ nettv.corio.com
 data.arqiva.tv
 cloud.arqiva.tv
 fls-eu.amazon.com
+api.runestone.samsung.com
+dc.di.runestone.samsung.com
+dls.di.runestone.samsung.com
+orsdls.di.runestone.samsung.com
+orsfs.di.runestone.samsung.com
+dc.di.atlas.samsung.com
+ddf.di.atlas.samsung.com
+elastic.lgwebostv.com
 
 # okazakee: strict-only rules
 nbc-jite.nbcuni.com

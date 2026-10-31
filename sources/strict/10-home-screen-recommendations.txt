@@ -5,3 +5,5 @@ us.nudge.lgtvcommon.com
 smartshare.lgtvsdp.com
 androidtvchannels-pa.googleapis.com
 androidtvwatsonfe-pa.googleapis.com
+eu-api.samsungyosemite.com
+uk-api.samsungyosemite.com

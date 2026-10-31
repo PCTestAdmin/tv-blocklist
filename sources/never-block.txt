@@ -14,6 +14,11 @@ api-launcher-na.hismarttv.com
 api.eu.hismarttv.com
 api.euro.hismarttv.com
 api.us.hismarttv.com
+# VIDAA home-screen images and launcher resources
+cdn-home-launcher.hismarttv.com
+icon-launcher.hismarttv.com
+pic-launcher.hismarttv.com
+resource-launcher.hismarttv.com
 # VIDAA (vidaahub.com), observed on a Smart Tech 55UV10V1, firmware V0302.01.00S.N0317
 vidaa-base-auth-eu.vidaahub.com
 domain.vidaahub.com
@@ -63,6 +68,9 @@ lgtvsdp.com
 ngfts.lge.com
 snu.lge.com
 us.lgtvsdp.com
+de.lgtvsdp.com
+eu7.lgtvsdp.com
+security.lgtvsdp.com
 jp.lgtvsdp.com
 nextlgsdp.com
 ngfts.nextlgsdp.com
@@ -94,6 +102,8 @@ mhc-ajax-us.myhomescreen.tv
 mhc-xpana-us.myhomescreen.tv
 api.vizio.com
 images.vizio.com
+osu.vudip.vizio.com
+*.plat.vizio.com
 
 # Google TV / Android TV: home screen
 androidtvlauncherxfe-pa.googleapis.com
@@ -167,3 +177,13 @@ ocsp.godaddy.com
 ocsp.rootca1.amazontrust.com
 ocsp.digicert.com
 ocsp.sectigo.com
+
+# TCL: update check (blocking it causes update errors, hagezi/dns-blocklists#4347)
+hw-tdp-o.api.leiniao.com
+tcllauncher.com
+
+
+# UK: geolocation checks that streaming apps (BBC iPlayer, ITVX, Freeview) rely on
+secure-geolocation.premiumtv.co.uk
+geohawk.co.uk
+ud-prd.geohawk.co.uk

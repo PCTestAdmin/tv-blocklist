@@ -12,3 +12,13 @@ nettv.corio.com
 data.arqiva.tv
 cloud.arqiva.tv
 fls-eu.amazon.com
+# Samsung data-intelligence collectors (Runestone / Atlas)
+api.runestone.samsung.com
+dc.di.runestone.samsung.com
+dls.di.runestone.samsung.com
+orsdls.di.runestone.samsung.com
+orsfs.di.runestone.samsung.com
+dc.di.atlas.samsung.com
+ddf.di.atlas.samsung.com
+# LG webOS log collector
+elastic.lgwebostv.com

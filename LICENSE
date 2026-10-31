@@ -23,7 +23,7 @@ SOFTWARE.
 -------------------------------------------------------------------------------
 Third-party lists
 
-This project includes domains from the following projects, both under the
+This project includes domains from the following projects, all under the
 MIT License:
 
   Perflyst/PiHoleBlocklist      Copyright (c) 2018 Perflyst
@@ -32,3 +32,7 @@ MIT License:
   Okazakee/tv-dns-blocklist     Copyright (c) 2026 okazakee
   https://github.com/Okazakee/tv-dns-blocklist
   (imported unchanged into sources/upstream/)
+
+  THectic-NL/Blocklists         Copyright (c) 2026 Thectic-NL
+  https://github.com/THectic-NL/Blocklists
+  (individual domains, hand-picked)

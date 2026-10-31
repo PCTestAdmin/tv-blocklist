@@ -2,7 +2,7 @@
 ! Description: Optional. Unblocks domains TVs need when other, broader lists block them.
 ! Homepage: https://github.com/PCTestAdmin/tv-blocklist
 ! Version: 2026.10.31
-! Rules: 230
+! Rules: 242
 ! License: MIT (see LICENSE for upstream credits)
 
 @@||account.samsung.com^$important
@@ -58,6 +58,7 @@
 @@||castreceiver.vidaatv.net^$important
 @@||catalog-prod.smartcasttv.com^$important
 @@||cdn-0.nflximg.com^$important
+@@||cdn-home-launcher.hismarttv.com^$important
 @@||cdn-plugin-sync-upgrade-juui.hismarttv.com^$important
 @@||cdn.samsungcloudsolution.com^$important
 @@||cdns-content.dzcdn.net^$important
@@ -68,6 +69,7 @@
 @@||d1oxlq5h9kq8q5.cloudfront.net^$important
 @@||data.mistat.intl.xiaomi.com^$important
 @@||dcape-na.amazon.com^$important
+@@||de.lgtvsdp.com^$important
 @@||de.nextlgsdp.com^$important
 @@||dev-multiscreen.samsung.com^$important
 @@||device-ecom.vidaahub.com^$important
@@ -81,6 +83,7 @@
 @@||epg.corio.com^$important
 @@||epgreg.sr.roku.com^$important
 @@||eu-auth2.samsungosp.com^$important
+@@||eu7.lgtvsdp.com^$important
 @@||fireoscaptiveportal.com^$important
 @@||firetvcaptiveportal.com^$important
 @@||fls-na.amazon.com^$important
@@ -88,6 +91,7 @@
 @@||ftv-smtv.ntp-fireos.com^$important
 @@||ftvr-na.amazon.com^$important
 @@||geo-bas-eu.vidaahub.com^$important
+@@||geohawk.co.uk^$important
 @@||gpm.samsungqbe.com^$important
 @@||hbbtv.3sat.de^$important
 @@||hbbtv.ard.de^$important
@@ -99,7 +103,9 @@
 @@||home-ui-eu.vidaahub.com^$important
 @@||hub-msg.vidaahub.com^$important
 @@||hub.samsungapps.com^$important
+@@||hw-tdp-o.api.leiniao.com^$important
 @@||iap.samsungapps.com^$important
+@@||icon-launcher.hismarttv.com^$important
 @@||image.roku.com^$important
 @@||images.vizio.com^$important
 @@||img.samsungapps.com^$important
@@ -168,6 +174,7 @@
 @@||otnprd9.samsungcloudsolution.net^$important
 @@||params-msg-eu.vidaahub.com^$important
 @@||partner.vidaahub.com^$important
+@@||pic-launcher.hismarttv.com^$important
 @@||platform.vizio.com^$important
 @@||playback-detail.sr.roku.com^$important
 @@||portal.store.sonyentertainmentnetwork.com^$important
@@ -178,13 +185,16 @@
 @@||prod.redwolf.external.plat.vizio.com^$important
 @@||rdx2.lgtvsdp.com^$important
 @@||reg.biv.sony.tv^$important
+@@||resource-launcher.hismarttv.com^$important
 @@||rpm.billing.roku.com^$important
 @@||samsungcloud.com^$important
 @@||samsungotn.net^$important
 @@||samsungrm.net^$important
 @@||sc-auth.samsungosp.com^$important
 @@||scfs.vizio.com^$important
+@@||secure-geolocation.premiumtv.co.uk^$important
 @@||secure.netflix.com^$important
+@@||security.lgtvsdp.com^$important
 @@||service.biv.sony.tv^$important
 @@||snu-dev.lge.com^$important
 @@||snu.lge.com^$important
@@ -200,6 +210,7 @@
 @@||su-ssl.lge.com^$important
 @@||su.lge.com^$important
 @@||synctime.hismarttv.com^$important
+@@||tcllauncher.com^$important
 @@||themes-service.sr.roku.com^$important
 @@||therokuchannel.roku.com^$important
 @@||time-bas-eu.vidaahub.com^$important
@@ -213,6 +224,7 @@
 @@||tvpnlinupepgpeu.samsungcloud.tv^$important
 @@||tvpnlinupepgpus.samsungcloud.tv^$important
 @@||tvupdate.roku.com^$important
+@@||ud-prd.geohawk.co.uk^$important
 @@||uiboot.netflix.com^$important
 @@||update.biv.sony.tv^$important
 @@||upgrade-eu.hismarttv.com^$important

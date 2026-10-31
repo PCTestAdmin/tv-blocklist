@@ -14,3 +14,17 @@ game.internetat.tv
 connecttv.pelmorex.com
 premium-videos.telly.com
 i-stream.pl
+# Samsung Ads network and Samsung analytics / diagnostics reporting
+samsungads.net
+samsungadhub.net
+ads.samsung.com
+analytics.bigdata.samsung.com
+analytics.samsungedo.com
+event-tracking.samsung.com
+nmetrics.samsung.com
+smetrics.samsung.com
+diagmon-policy.samsungdm.com
+diagmon-serviceapi.samsungdm.com
+report.gras.samsungdm.com
+us-report.gras.samsungdm.com
+musicid.samsungcloudsolution.net

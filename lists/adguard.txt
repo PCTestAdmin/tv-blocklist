@@ -2,7 +2,7 @@
 ! Description: Smart-TV ads, ACR tracking and telemetry. No known side effects.
 ! Homepage: https://github.com/PCTestAdmin/tv-blocklist
 ! Version: 2026.10.31
-! Rules: 282
+! Rules: 296
 ! License: MIT (see LICENSE for upstream credits)
 
 ! Cross-vendor: ACR (automatic content recognition) and TV ad networks
@@ -24,6 +24,7 @@
 ||tvmeta-dynamic.tvinteractive.tv^
 ||control-zoo-dai-default.tvinteractive.tv^
 ||secure-eu.imrworldwide.com^
+||dis.inscape.tv^
 
 ! Hisense / VIDAA (also Smart Tech, Toshiba): ad recommendations and log upload
 ||recommend-ui-eu.vidaahub.com^
@@ -52,6 +53,19 @@
 ||connecttv.pelmorex.com^
 ||premium-videos.telly.com^
 ||i-stream.pl^
+||samsungads.net^
+||samsungadhub.net^
+||ads.samsung.com^
+||analytics.bigdata.samsung.com^
+||analytics.samsungedo.com^
+||event-tracking.samsung.com^
+||nmetrics.samsung.com^
+||smetrics.samsung.com^
+||diagmon-policy.samsungdm.com^
+||diagmon-serviceapi.samsungdm.com^
+||report.gras.samsungdm.com^
+||us-report.gras.samsungdm.com^
+||musicid.samsungcloudsolution.net^
 
 ! LG webOS: ads, ACR and customer data platform
 ||lgsmartad.com^

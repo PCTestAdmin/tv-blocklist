@@ -43,7 +43,7 @@ Works with **AdGuard Home**, **Pi-hole** and any DNS blocker that reads hosts or
 
 ## Which list?
 
-| | **Standard** (~280 rules) | **Strict** (~400 rules) |
+| | **Standard** (~300 rules) | **Strict** (~420 rules) |
 |---|:---:|:---:|
 | Home-screen ads and promo banners | ✅ | ✅ |
 | ACR tracking (what you watch) | ✅ | ✅ |
@@ -88,12 +88,13 @@ Many TV blocklists block whole vendor clouds and break sign-in, the store or upd
 | Vendor / platform | Standard | Strict |
 |---|---|---|
 | **Hisense / VIDAA** (also Smart Tech, Toshiba VIDAA) | Ads, ad reporting, monetisation, logs (all regions), A/B tests, ACR | Shopping and recommendation widgets |
-| **Samsung Tizen** | Ads, ACR, Smart Hub banners, Samsung Ads, logs | Config telemetry, push |
-| **LG webOS** | Ads, ACR (Alphonso), customer data platform, recommendations backend | Content Store recommendations |
+| **Samsung Tizen** | Ads, ACR, Smart Hub banners, Samsung Ads network, analytics, diagnostics reports | Data-intelligence collectors, config telemetry, TV Plus recommendations |
+| **LG webOS** | Ads, ACR (Alphonso), customer data platform, recommendations backend | Content Store recommendations, log collector |
 | **Sony Bravia** | Telemetry, measurement, ACR (Samba TV) | Config distribution |
 | **Panasonic Viera** | Usage statistics, ads | Security telemetry |
 | **Philips** (Titan OS / Net TV), **Toshiba**, **TCL** | Ads, telemetry, ACR (Samba TV) | Portal telemetry |
 | **Vizio SmartCast** | ACR (Inscape), telemetry | Widgets |
+| **TCL** | ACR (Samba TV) | – |
 | **Roku** | Logs, ads, ACR | – |
 | **Amazon Fire TV** | Ads, telemetry, ACR | Device metrics, surveys |
 | **Xiaomi Mi TV** | Tracking, ad SDK | – |
@@ -172,4 +173,5 @@ MIT, see [LICENSE](LICENSE). Built on the work of:
 
 - [Okazakee/tv-dns-blocklist](https://github.com/Okazakee/tv-dns-blocklist) (MIT): imported unchanged and filtered through the protection list. Its [SOURCES.md](https://github.com/Okazakee/tv-dns-blocklist/blob/main/SOURCES.md) documents the evidence for each rule.
 - [Perflyst/PiHoleBlocklist](https://github.com/Perflyst/PiHoleBlocklist) (MIT): many of the hand-picked rules and most of the breakage reports behind the protection list.
+- [THectic-NL/Blocklists](https://github.com/THectic-NL/Blocklists) (MIT): additional hand-picked Samsung, LG and Vizio rules. Its smart-TV list is not imported as a whole because it blocks several domains on our protection list.
 - [Watching TV with the Second-Party](https://arxiv.org/abs/2409.06203) (Anselmi et al., IMC 2024): ACR measurements on Samsung and LG TVs.
