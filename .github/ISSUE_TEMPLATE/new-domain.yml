@@ -1,0 +1,24 @@
+name: New tracking or ad domain
+description: Your TV contacts a domain that serves ads or tracking.
+labels: [new-domain]
+body:
+  - type: input
+    id: model
+    attributes:
+      label: TV model and firmware
+    validations:
+      required: true
+  - type: textarea
+    id: domains
+    attributes:
+      label: Domains
+      description: One per line. The output of scripts/analyze_querylog.py helps.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Why do you think they serve ads or tracking?
+      description: And did the TV keep working with them blocked?
+    validations:
+      required: true

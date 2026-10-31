@@ -1,11 +1,11 @@
-# Title: TV-Blockliste – Standard
-# Description: Werbung, ACR und Tracking auf Smart-TVs. Sicher für den Alltag.
+# Title: TV Blocklist – Standard
+# Description: Smart-TV ads, ACR tracking and telemetry. No known side effects.
 # Homepage: https://github.com/PCTestAdmin/tv-blocklist
 # Version: 2026.10.31
-# Rules: 119
-# License: MIT
+# Rules: 271
+# License: MIT (see LICENSE for upstream credits)
 
-# Herstellerübergreifend: ACR (Inhaltserkennung) und TV-Werbenetzwerke
+# Cross-vendor: ACR (automatic content recognition) and TV ad networks
 0.0.0.0 alphonso.tv
 0.0.0.0 flingo.tv
 0.0.0.0 api.thetake.com
@@ -25,11 +25,11 @@
 0.0.0.0 control-zoo-dai-default.tvinteractive.tv
 0.0.0.0 secure-eu.imrworldwide.com
 
-# Hisense / VIDAA (auch Smart Tech, Toshiba): Werbe-Empfehlungen und Protokoll-Upload
+# Hisense / VIDAA (also Smart Tech, Toshiba): ad recommendations and log upload
 0.0.0.0 recommend-ui-eu.vidaahub.com
 0.0.0.0 policy-jrnl-eu.vidaahub.com
 
-# Samsung Tizen: Werbung, ACR, Werbe-Banner im Smart Hub und Telemetrie
+# Samsung Tizen: ads, ACR, Smart Hub banners and telemetry
 0.0.0.0 samsungads.com
 0.0.0.0 samsungacr.com
 0.0.0.0 samsungadhub.com
@@ -46,7 +46,7 @@
 0.0.0.0 premium-videos.telly.com
 0.0.0.0 i-stream.pl
 
-# LG webOS: Werbung, ACR und Datensammlung (Customer Data Platform)
+# LG webOS: ads, ACR and customer data platform
 0.0.0.0 lgsmartad.com
 0.0.0.0 ad.lgappstv.com
 0.0.0.0 ibis.lgappstv.com
@@ -60,7 +60,7 @@
 0.0.0.0 aic.cdpsvc.lgtvcommon.com
 0.0.0.0 aic.rdl.lgtvcommon.com
 
-# Sony Bravia: Telemetrie
+# Sony Bravia: telemetry
 0.0.0.0 ad8641f3cff742de893d919add74c2bb.ssm1.internet.sony.tv
 0.0.0.0 ad8641f3cff742de893d919add74c2bb.ssm2.internet.sony.tv
 0.0.0.0 api-mf1.meta.ndmdhs.com
@@ -70,7 +70,7 @@
 0.0.0.0 call.me.sel.sony.com
 0.0.0.0 facemap.foldlife.net
 
-# Panasonic Viera: Nutzungsstatistik
+# Panasonic Viera: usage statistics
 0.0.0.0 0077777700140002.myhomescreen.tv
 0.0.0.0 collect.myhomescreen.tv
 0.0.0.0 usage.myhomescreen.tv
@@ -112,12 +112,12 @@
 0.0.0.0 usage-us-fy2022.myhomescreen.tv
 0.0.0.0 vindicosuite.com
 
-# Philips und Toshiba: Werbung und Telemetrie
+# Philips and Toshiba: ads and telemetry
 0.0.0.0 ad.nettvservices.com
 0.0.0.0 7345023508.fxmconnect.com
 0.0.0.0 7345023508.fxm9485766783.com
 
-# Roku, Amazon Fire TV, Xiaomi Mi TV, Foxtel: Werbung und Telemetrie
+# Roku, Amazon Fire TV, Xiaomi Mi TV, Foxtel: ads and telemetry
 0.0.0.0 logs.roku.com
 0.0.0.0 display.ravm.tv
 0.0.0.0 ads.roku.com
@@ -130,7 +130,7 @@
 0.0.0.0 sdkconfig.ad.intl.xiaomi.com
 0.0.0.0 foxtel-prod-events.digitalsmiths.net
 
-# HbbTV (roter Knopf): Werbe-Proxy und Tracking
+# HbbTV (red button): ad proxy and tracking
 0.0.0.0 redbutton-adproxy-lb-prod.redbutton.de
 0.0.0.0 hbbtv-track.redbutton.de
 0.0.0.0 hse24.tvtelemetrie.de
@@ -140,6 +140,160 @@
 0.0.0.0 de.ioam.de
 0.0.0.0 config.ioam.de
 
-# Streaming-Apps: Telemetrie
+# Streaming apps: telemetry
 0.0.0.0 ichnaea.netflix.com
 0.0.0.0 logs.netflix.com
+
+# okazakee: standard tier
+0.0.0.0 ndmdhs.com
+0.0.0.0 samba.tv
+0.0.0.0 social.biv.sony.tv
+0.0.0.0 sonybivstatic-a.akamaihd.net
+0.0.0.0 cjpowercast.com
+0.0.0.0 lgtvcommon.com
+0.0.0.0 rdx2.nextlgsdp.com
+0.0.0.0 ibsstat.lgappstv.com
+0.0.0.0 eic-gfts.lge.com
+0.0.0.0 aic-gfts.lge.com
+0.0.0.0 qt2-ngfts.lge.com
+0.0.0.0 ueiwsp.com
+0.0.0.0 acr-au-prd.samsungcloud.tv
+0.0.0.0 acr-br-prd.samsungcloud.tv
+0.0.0.0 acr-ca-prd.samsungcloud.tv
+0.0.0.0 acr-eu-prd.samsungcloud.tv
+0.0.0.0 acr-in-prd.samsungcloud.tv
+0.0.0.0 acr-kr-prd.samsungcloud.tv
+0.0.0.0 acr-mx-prd.samsungcloud.tv
+0.0.0.0 acr-nz-prd.samsungcloud.tv
+0.0.0.0 acr-us-prd.samsungcloud.tv
+0.0.0.0 samsungtvads.com
+0.0.0.0 sspapi-prd.samsungrs.com
+0.0.0.0 adconsent.samsungrs.com
+0.0.0.0 samsungads.adsmeasurement.com
+0.0.0.0 img-resize-cdn-prod.samsungnyc.com
+0.0.0.0 sca.samsung.com
+0.0.0.0 ureca.samsungapps.com
+0.0.0.0 devicelog.samsungcloudsolution.net
+0.0.0.0 prderrordumpssm.samsungcloudsolution.net
+0.0.0.0 vdterms.samsungcloudsolution.com
+0.0.0.0 sas.samsungcloudsolution.com
+0.0.0.0 svwindow.samsungcloudsolution.com
+0.0.0.0 tvpnlogopus.samsungcloud.tv
+0.0.0.0 tvpnlogopeu.samsungcloud.tv
+0.0.0.0 tvpnlogosus.samsungcloud.tv
+0.0.0.0 tvpnlogodus.samsungcloud.tv
+0.0.0.0 tvpndynamiclogopus.samsungcloud.tv
+0.0.0.0 tvpndynamiclogopeu.samsungcloud.tv
+0.0.0.0 tvpndynamiclogosus.samsungcloud.tv
+0.0.0.0 qoe.samsungcloud.tv
+0.0.0.0 pipeaota.com
+0.0.0.0 test.samsungrm.net
+0.0.0.0 ter-jrnl-eu.vidaahub.com
+0.0.0.0 exc-jrnl-eu.vidaahub.com
+0.0.0.0 api-logsdk.hismarttv.com
+0.0.0.0 unified-ter.hismarttv.com
+0.0.0.0 unified-exc.hismarttv.com
+0.0.0.0 api-cloudfalcon.hismarttv.com
+0.0.0.0 api-gps-eu.hismarttv.com
+0.0.0.0 rpt-ads.vidaahub.com
+0.0.0.0 rsc-ads.vidaahub.com
+0.0.0.0 rpt-mntz.vidaahub.com
+0.0.0.0 rsc-mntz.vidaahub.com
+0.0.0.0 rpt-mntz-azure.vidaahub.com
+0.0.0.0 monetization-ad-tracking.prod-eu-c.az.vidaahub.com
+0.0.0.0 monetization-tenant-ads.prod-eu-c.az.vidaahub.com
+0.0.0.0 ads-privacy.vidaahub.com
+0.0.0.0 ad-cmp.hismarttv.com
+0.0.0.0 ad-imp.hismarttv.com
+0.0.0.0 ad-download.hismarttv.com
+0.0.0.0 ad-download-mam.hismarttv.com
+0.0.0.0 ads-portal-cdn.vidaatv.net
+0.0.0.0 tracking-vss.vidaahub.com
+0.0.0.0 abtest-tv.vidaahub.com
+0.0.0.0 recommend-ui.vidaahub.com
+0.0.0.0 sttc-az-recommend-ui.vidaahub.com
+0.0.0.0 recommender-launcher.hismarttv.com
+0.0.0.0 api-4know-eu.hismarttv.com
+0.0.0.0 api-shoppingguider.hismarttv.com
+0.0.0.0 hisense-beacons.xumo.com
+0.0.0.0 hisense-lite-beacons.xumo.com
+0.0.0.0 acr.unruly.co
+0.0.0.0 trvdp.com
+0.0.0.0 tvinteractive.tv
+0.0.0.0 ads.vizio.com
+0.0.0.0 al-smetrics.vizio.com
+0.0.0.0 rlog4.vizio.com
+0.0.0.0 rlog_sem.vizio.com
+0.0.0.0 vizio.adsmeasurement.com
+0.0.0.0 impression-proxy-prod.smartcasttv.com
+0.0.0.0 content-engagement-metrics.smartcasttv.com
+0.0.0.0 personalization-prod.smartcasttv.com
+0.0.0.0 experiments-prod.smartcasttv.com
+0.0.0.0 ad-broker-prod.smartcasttv.com
+0.0.0.0 promotions-prod.smartcasttv.com
+0.0.0.0 digitalhomeservices.yahoo.com
+0.0.0.0 widgets.yahoo.com
+0.0.0.0 track.sr.roku.com
+0.0.0.0 traces.sr.roku.com
+0.0.0.0 bif.sr.roku.com
+0.0.0.0 userdata.sr.roku.com
+0.0.0.0 logs.sr.roku.com
+0.0.0.0 item-tracking.dev.sr.roku.com
+0.0.0.0 assets.sr.roku.com
+0.0.0.0 amarillo.sb.roku.com
+0.0.0.0 samples.voice.cti.roku.com
+0.0.0.0 cloudservices.roku.com
+0.0.0.0 analytics.roku.com
+0.0.0.0 beacon.web.roku.com
+0.0.0.0 beacon-partner.web.roku.com
+0.0.0.0 pixel.web.roku.com
+0.0.0.0 customer-feedbacks.web.roku.com
+0.0.0.0 amoeba-plus.web.roku.com
+0.0.0.0 wwwimg.roku.com
+0.0.0.0 lat-services.api.data.roku.com
+0.0.0.0 ads-us-east-1.delivery.roku.com
+0.0.0.0 adservices.roku.com
+0.0.0.0 advertising.roku.com
+0.0.0.0 advertising.us-east-1.msc.roku.com
+0.0.0.0 ads.gcp.roku.com
+0.0.0.0 ads.rokuapi.net
+0.0.0.0 adsmanager.roku.com
+0.0.0.0 ad-eng-bl.prod.rpay.int.roku.com
+0.0.0.0 adeng-identity-prod3.bdp.roku.com
+0.0.0.0 ravm.tv
+0.0.0.0 acr.roku.com
+0.0.0.0 roku.adsmeasurement.com
+0.0.0.0 admeasurement.com
+0.0.0.0 roku-beacons.xumo.com
+0.0.0.0 ravm-staging.data.roku.com
+0.0.0.0 unagi.amazon.com
+0.0.0.0 minerva.devices.a2z.com
+0.0.0.0 insights.video.a2z.com
+0.0.0.0 bugs.firebat.prime-video.amazon.dev
+0.0.0.0 d3p8zr0ffa9t17.cloudfront.net
+0.0.0.0 web.diagnostic.networking.aws.dev
+0.0.0.0 api.statsig.com
+0.0.0.0 mobile-collector.newrelic.com
+0.0.0.0 devicemessaging.us-east-1.amazon.com
+0.0.0.0 ads.titanos.tv
+0.0.0.0 philips-android-promo.titanos.tv
+0.0.0.0 android-promo.titanos.tv
+0.0.0.0 data.mistat.intl.miui.com
+0.0.0.0 mistat.intl.miui.com.edgesuite.net
+0.0.0.0 sdkconfig.ad.xiaomi.com
+0.0.0.0 sys.tv.india.xiaomi.com
+0.0.0.0 tvboss.pandora.xiaomi.com
+0.0.0.0 pull.mitv.pandora.xiaomi.com
+0.0.0.0 dvb.pandora.xiaomi.com
+0.0.0.0 ptmi.gitv.pandora.xiaomi.com
+0.0.0.0 hook.gitv.pandora.xiaomi.com
+0.0.0.0 adx.tv.mi.com
+0.0.0.0 h5.tv.mi.com
+0.0.0.0 in.tv.global.mi.com
+0.0.0.0 api.cupid.ptqy.gitv.tv
+0.0.0.0 pb.bi.gitv.tv
+0.0.0.0 tv.app.migc.xiaomi.com
+0.0.0.0 redbutton-lb-prod.redbutton.de
+0.0.0.0 redbutton.sim-technik.de
+0.0.0.0 hbbtv-extern-fe01.sim-technik.de
+0.0.0.0 logs1409.xiti.com

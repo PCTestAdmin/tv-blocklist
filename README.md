@@ -1,136 +1,166 @@
-# 📺 TV-Blockliste
+# 📺 TV Blocklist
 
-[![Listen prüfen](https://github.com/PCTestAdmin/tv-blocklist/actions/workflows/check.yml/badge.svg)](https://github.com/PCTestAdmin/tv-blocklist/actions/workflows/check.yml)
-![Lizenz: MIT](https://img.shields.io/badge/Lizenz-MIT-blue)
+[![Check lists](https://github.com/PCTestAdmin/tv-blocklist/actions/workflows/check.yml/badge.svg)](https://github.com/PCTestAdmin/tv-blocklist/actions/workflows/check.yml)
+[![Update upstream lists](https://github.com/PCTestAdmin/tv-blocklist/actions/workflows/update-upstream.yml/badge.svg)](https://github.com/PCTestAdmin/tv-blocklist/actions/workflows/update-upstream.yml)
+![License: MIT](https://img.shields.io/badge/license-MIT-blue)
 
-Eine DNS-Blockliste **nur für Smart-TVs**. Sie sperrt Werbung auf dem Startbildschirm, ACR-Tracking (der Fernseher meldet dem Hersteller, was du gerade schaust) und Telemetrie – **ohne** Anmeldung, App-Store, Streaming-Apps oder Updates zu blockieren.
+A DNS blocklist **for smart TVs only**. It blocks home-screen ads, ACR tracking (your TV reporting what you watch) and vendor telemetry, **without** breaking sign-in, the app store, streaming apps or firmware updates.
 
-Für **AdGuard Home** und **Pi-hole**.
+Works with **AdGuard Home**, **Pi-hole** and any DNS blocker that reads hosts or domain lists.
 
 ---
 
-## Inhalt
+- [Quick start](#quick-start)
+- [Which list?](#which-list)
+- [What gets blocked, and what never does](#what-gets-blocked-and-what-never-does)
+- [Supported TVs](#supported-tvs)
+- [Something broke?](#something-broke)
+- [Find what your TV sends](#find-what-your-tv-sends)
+- [Contributing](#contributing)
+- [Credits and license](#credits-and-license)
 
-- [Schnellstart](#schnellstart)
-- [Welche Liste?](#welche-liste)
-- [Was wird gesperrt – und was nie](#was-wird-gesperrt--und-was-nie)
-- [Unterstützte Fernseher](#unterstützte-fernseher)
-- [Wenn etwas nicht mehr geht](#wenn-etwas-nicht-mehr-geht)
-- [Mitmachen](#mitmachen)
-- [Lizenz](#lizenz)
-
-## Schnellstart
+## Quick start
 
 ### AdGuard Home
 
-1. **Filter → DNS-Sperrlisten → Sperrliste hinzufügen → Benutzerdefinierte Liste hinzufügen**
-2. Name: `TV-Blockliste`, URL:
+1. **Filters → DNS blocklists → Add blocklist → Add a custom list**
+2. Name: `TV Blocklist`, URL:
    ```
    https://raw.githubusercontent.com/PCTestAdmin/tv-blocklist/main/lists/adguard.txt
    ```
-3. **Speichern** – fertig. AdGuard Home aktualisiert die Liste automatisch.
+3. **Save**. AdGuard Home keeps the list up to date automatically.
 
 ### Pi-hole
 
-1. **Lists** (ältere Versionen: **Adlists**) öffnen
-2. Adresse eintragen und **Add** klicken:
+1. Open **Lists** (older versions: **Adlists**)
+2. Add this address and click **Add**:
    ```
    https://raw.githubusercontent.com/PCTestAdmin/tv-blocklist/main/lists/hosts.txt
    ```
-3. **Tools → Update Gravity** (oder `pihole -g`)
+3. **Tools → Update Gravity** (or `pihole -g`)
 
-> **Wichtig:** Der Fernseher muss deinen AdGuard bzw. Pi-hole auch als DNS-Server benutzen. Trage ihn im Router (z. B. FRITZ!Box: *Heimnetz → Netzwerk → Netzwerkeinstellungen → IPv4 → Lokaler DNS-Server*) oder direkt in den Netzwerkeinstellungen des Fernsehers ein. Prüfen kannst du das im Abfrageprotokoll: Dort müssen Anfragen von der IP des Fernsehers auftauchen.
+> **Your TV has to use your DNS server.** Set it in your router's DHCP settings or in the TV's network settings, then check the query log for requests from the TV's IP. Some TVs (Samsung, Vizio, some VIDAA models) ignore the DHCP DNS server; redirect port 53 to your blocker on the router if nothing shows up.
 
-## Welche Liste?
+## Which list?
 
-| | **Standard** (~120 Regeln) | **Streng** (~155 Regeln) |
-|---|---|---|
-| Werbung und Werbe-Banner auf dem Startbildschirm | ✅ | ✅ |
-| ACR-Tracking (was du schaust) | ✅ | ✅ |
-| Hersteller-Telemetrie, Fehlerberichte, Nutzungsstatistik | ✅ | ✅ |
-| HbbTV-Werbung, Tracking und Reichweitenmessung | ✅ | ✅ |
-| Empfehlungsreihen auf LG- und Google-TV-Startseiten | – | ✅ |
-| HbbTV-Apps privater Sender und Shopping-Kanäle | – | ✅ |
-| Telemetrie mit unklarem Zweck | – | ✅ |
-| Anmeldung, App-Store, Apps, Updates | nie gesperrt | nie gesperrt |
+| | **Standard** (~280 rules) | **Strict** (~400 rules) |
+|---|:---:|:---:|
+| Home-screen ads and promo banners | ✅ | ✅ |
+| ACR tracking (what you watch) | ✅ | ✅ |
+| Vendor telemetry, crash reports, usage statistics | ✅ | ✅ |
+| HbbTV ad proxy, tracking, audience measurement | ✅ | ✅ |
+| Home-screen recommendation rows (LG, Google TV) | – | ✅ |
+| HbbTV apps of commercial and shopping channels | – | ✅ |
+| Telemetry of unclear purpose, generic ad networks used in TV apps | – | ✅ |
+| Sign-in, app store, apps, updates | never blocked | never blocked |
 
-**Standard** hat keine bekannten Nebenwirkungen. **Streng** nimmt bewusst Funktionen weg: Empfehlungsreihen bleiben leer, und der rote Knopf von z. B. RTL II, SAT.1 oder QVC startet nicht mehr.
+**Standard** has no known side effects. **Strict** removes features on purpose: recommendation rows go empty and the red button of some commercial channels stops working.
 
-**Empfehlung:** Mit **Standard** anfangen. Wer keine Empfehlungen und keine Sender-Einblendungen will, wechselt auf **Streng**.
+Start with **Standard**. Switch to **Strict** if you don't want recommendations or broadcaster overlays.
 
-### Alle Formate
+### All formats
 
-| Format | Standard | Streng | Für |
+| Format | Standard | Strict | For |
 |---|---|---|---|
 | AdGuard | [`adguard.txt`](lists/adguard.txt) | [`adguard-strict.txt`](lists/adguard-strict.txt) | AdGuard Home, AdGuard DNS |
-| Hosts | [`hosts.txt`](lists/hosts.txt) | [`hosts-strict.txt`](lists/hosts-strict.txt) | Pi-hole, Router, `/etc/hosts` |
-| Domains | [`domains.txt`](lists/domains.txt) | [`domains-strict.txt`](lists/domains-strict.txt) | Tools, die reine Domainlisten erwarten |
+| Hosts | [`hosts.txt`](lists/hosts.txt) | [`hosts-strict.txt`](lists/hosts-strict.txt) | Pi-hole, routers, `/etc/hosts` |
+| Domains | [`domains.txt`](lists/domains.txt) | [`domains-strict.txt`](lists/domains-strict.txt) | tools that expect plain domain lists |
 
-Rohdaten-Adresse: `https://raw.githubusercontent.com/PCTestAdmin/tv-blocklist/main/lists/<datei>`
+Raw URL: `https://raw.githubusercontent.com/PCTestAdmin/tv-blocklist/main/lists/<file>`
 
-## Was wird gesperrt – und was nie
+The AdGuard format has about 10 more rules than the others: wildcards (e.g. every regional `*-jrnl-*.vidaahub.com` endpoint) and regular expressions, which hosts files cannot express.
 
-Viele TV-Blocklisten sperren ganze Hersteller-Domains und legen damit Anmeldung, App-Store oder Updates lahm. Diese Liste geht den umgekehrten Weg:
+### Optional: allowlist
 
-- **Nur einzelne, eindeutig zugeordnete Domains** – keine pauschalen Sperren ganzer Hersteller-Clouds, keine Ausnahme-Konstrukte.
-- **Schutzliste [`sources/never-block.txt`](sources/never-block.txt):** Domains, die Fernseher nachweislich brauchen (Konto, Uhrzeit, App-Store, Startbildschirm, Firmware-Updates, Netflix, YouTube, Mediatheken). Der Build **bricht ab**, sobald eine Regel eine davon treffen würde – auch über Subdomains oder Platzhalter.
-- **Bekannte Fehlerquellen bewusst weggelassen**, z. B. `samsungcloudsolution.com` (pauschal), `lgtvsdp.com`, `api.*.hismarttv.com`, die Google-TV-Startseite und die Netflix-Telemetrie `customerevents.netflix.com`.
-- **Keine allgemeinen Werbenetzwerke** wie `doubleclick.net` – die gehören in eine normale Werbeblockliste und bringen manche werbefinanzierte TV-App zum Hängen.
+[`adguard-allowlist.txt`](lists/adguard-allowlist.txt) unblocks every domain on the protection list with `$important`. Add it **only** if a broad general-purpose list (e.g. HaGeZi Ultimate) breaks your TV. It overrides blocks from all your other lists for those domains.
 
-## Unterstützte Fernseher
+## What gets blocked, and what never does
 
-| Hersteller / System | Standard | Streng |
+Many TV blocklists block whole vendor clouds and break sign-in, the store or updates along the way. This list works the other way round:
+
+- **Specific hostnames, no blanket blocks** of vendor clouds.
+- **Protection list.** [`sources/never-block.txt`](sources/never-block.txt) plus the allowlist of the upstream project hold over 200 domains TVs need: accounts, clock sync, app stores, home screens, firmware updates, DRM, voice control, Netflix, YouTube and broadcasters' catch-up apps. **The build fails** if one of our rules would block any of them, whether directly, via a parent domain, a wildcard or a regex.
+- **Upstream rules are filtered too.** Rules imported from other lists that would hit a protected domain are dropped automatically. The build log shows each one.
+- **Known troublemakers left out on purpose**, e.g. `samsungcloudsolution.com` as a whole, `lgtvsdp.com`, `nextlgsdp.com`, `myhomescreen.tv`, the Google TV launcher and Netflix's `customerevents`.
+
+## Supported TVs
+
+| Vendor / platform | Standard | Strict |
 |---|---|---|
-| Samsung (Tizen) | Werbung, ACR, Smart-Hub-Banner, Fehlerberichte | – |
-| LG (webOS) | Werbung, ACR, Datensammlung (CDP) | Empfehlungsreihen |
-| Hisense / VIDAA (auch Smart Tech, Toshiba) | Werbe-Empfehlungen, Protokoll-Upload | Telemetrie |
-| Sony Bravia | Telemetrie, ACR (Samba TV) | Konfigurations-Telemetrie |
-| Panasonic Viera | Nutzungsstatistik, Werbung | Sicherheits-Telemetrie |
-| Philips, Toshiba, TCL | Werbung, ACR (Samba TV) | Portal-Telemetrie |
-| Vizio | ACR (Inscape) | – |
-| Roku, Amazon Fire TV, Xiaomi | Werbung, Telemetrie | Amazon-Protokolle |
-| Google TV / Android TV | – | Empfehlungsreihen |
-| HbbTV (deutsche Sender) | Werbe-Proxy, Tracking, Reichweitenmessung | Apps privater Sender |
-| Netflix | Telemetrie | – |
+| **Hisense / VIDAA** (also Smart Tech, Toshiba VIDAA) | Ads, ad reporting, monetisation, logs (all regions), A/B tests, ACR | Shopping and recommendation widgets |
+| **Samsung Tizen** | Ads, ACR, Smart Hub banners, Samsung Ads, logs | Config telemetry, push |
+| **LG webOS** | Ads, ACR (Alphonso), customer data platform, recommendations backend | Content Store recommendations |
+| **Sony Bravia** | Telemetry, measurement, ACR (Samba TV) | Config distribution |
+| **Panasonic Viera** | Usage statistics, ads | Security telemetry |
+| **Philips** (Titan OS / Net TV), **Toshiba**, **TCL** | Ads, telemetry, ACR (Samba TV) | Portal telemetry |
+| **Vizio SmartCast** | ACR (Inscape), telemetry | Widgets |
+| **Roku** | Logs, ads, ACR | – |
+| **Amazon Fire TV** | Ads, telemetry, ACR | Device metrics, surveys |
+| **Xiaomi Mi TV** | Tracking, ad SDK | – |
+| **Google TV / Android TV** | – | Recommendation rows |
+| **HbbTV** (European broadcasters) | Ad proxy, tracking, audience measurement | Apps of commercial and shopping channels |
+| **Streaming apps** | Netflix telemetry | – |
 
-**Hisense / VIDAA:** Getestet auf einem Smart Tech 55UV10V1 (Firmware V0302.01.00S.N0317). Gesperrt werden die Empfehlungs-Kacheln (`recommend-ui-eu`) und der Protokoll-Upload (`policy-jrnl-eu`). Alle anderen `vidaahub.com`-Dienste – Anmeldung, Startbildschirm, Uhrzeit, Region, Sprachsteuerung, Updates – stehen in der Schutzliste. Wer weitere eindeutige Werbedomains im Abfrageprotokoll findet: bitte melden!
+**Hisense / VIDAA** is tested on a Smart Tech 55UV10V1 (firmware V0302.01.00S.N0317). Every other `vidaahub.com` service, including sign-in, home screen, clock, region, voice, payments and updates, is on the protection list.
 
-**Warum nicht tausende Einträge?** Große Listen erreichen ihre Größe mit allgemeinen Werbe- und Tracking-Domains aus dem Web. Die gehören in eine normale Blockliste (z. B. HaGeZi), die du parallel nutzen kannst. Diese Liste enthält nur Domains, die Fernseher selbst aufrufen – und davon gibt es nur einige hundert.
+**Why not thousands of rules?** Huge lists get their size from general web ad and tracking domains. Those belong in a general list such as HaGeZi or OISD, which you can run alongside this one. This list only contains domains that TVs contact, and there are only a few hundred of those.
 
-## Wenn etwas nicht mehr geht
+## Something broke?
 
-1. Im Abfrageprotokoll nach der **IP des Fernsehers** filtern.
-2. Die gesperrten Domains rund um den Zeitpunkt des Fehlers ansehen.
-3. Verdächtige Domain **entsperren** und testen.
-4. Hat das geholfen, bitte ein [Issue](https://github.com/PCTestAdmin/tv-blocklist/issues) anlegen mit **Modell, Firmware-Version und Domain**. Die Domain wird dann aus der Liste entfernt und in die Schutzliste aufgenommen.
+1. Filter your query log by the **TV's IP address**.
+2. Look at the blocked domains around the time it failed.
+3. **Unblock** the suspect and try again.
+4. If that fixed it, [open an issue](https://github.com/PCTestAdmin/tv-blocklist/issues/new?template=something-broke.yml) with **model, firmware and domain**. It will be removed and added to the protection list.
 
-Tritt der Fehler nur mit **Streng** auf: auf **Standard** zurückwechseln.
+If it only happens with **Strict**, switch back to **Standard**.
 
-## Mitmachen
+## Find what your TV sends
 
-Die Regeln stehen nach Hersteller sortiert in [`sources/standard/`](sources/standard) und [`sources/strict/`](sources/strict), eine Domain pro Zeile:
+[`scripts/analyze_querylog.py`](scripts/analyze_querylog.py) reads AdGuard Home's `querylog.json` (in AdGuard Home's `data/` folder) or a plain list of domains, and shows how this list treats every domain your TV contacted:
+
+```bash
+python scripts/analyze_querylog.py querylog.json --client 192.168.1.50
+```
 
 ```
-domain.tld          Domain und alle Subdomains sperren
-a.*.domain.tld      Platzhalter (nur im AdGuard-Format)
-# Kommentar         die erste Kommentarzeile ist der Abschnittstitel
+41 domains, 1873 queries: 9 standard, 2 strict, 24 protected, 6 unknown
+
+status     queries  domain
+unknown        212 ?rpt-xyz.vidaahub.com
+unknown         31  epg.example-tv.com
 ```
 
-Nach jeder Änderung die Listen neu bauen und beides committen:
+Unknown domains whose names suggest ads or tracking are marked with `?`. Please [report them](https://github.com/PCTestAdmin/tv-blocklist/issues/new?template=new-domain.yml).
+
+## Contributing
+
+Rules live in [`sources/standard/`](sources/standard) and [`sources/strict/`](sources/strict), sorted by vendor, one per line:
+
+```
+domain.tld          block the domain and all subdomains
+a.*.domain.tld      wildcard (AdGuard format only)
+/^regex$/           regular expression (AdGuard format only)
+# comment           the first comment line is the section title
+```
+
+Domains a TV needs go into [`sources/never-block.txt`](sources/never-block.txt). Rebuild after every change and commit both:
 
 ```bash
 python scripts/build.py
 ```
 
-Der Build und die GitHub Action prüfen bei jedem Push:
+The build and the GitHub Action check that every rule is valid, that there are no duplicates or rules already covered by another one, that no rule hits a protected domain, and that `lists/` is up to date.
 
-- Ist jede Domain gültig?
-- Gibt es Duplikate oder Regeln, die schon durch eine andere abgedeckt sind?
-- Trifft eine Regel eine Domain aus der Schutzliste?
-- Sind die Dateien in `lists/` aktuell?
+Please only add domains your own TV contacted, together with the model, and say whether the TV kept working with them blocked.
 
-**Neue Domains** bitte nur, wenn sie im eigenen Abfrageprotokoll vom Fernseher kamen und nachweislich Werbung oder Tracking liefern – mit Gerätemodell im Pull Request. Eine Domain, die etwas kaputt macht, gehört in [`never-block.txt`](sources/never-block.txt).
+### Upstream lists
 
-## Lizenz
+[`scripts/update_upstream.py`](scripts/update_upstream.py) imports curated, MIT-licensed TV lists into [`sources/upstream/`](sources/upstream). A GitHub Action runs it every Monday and commits the result. Files in `sources/upstream/` are generated; don't edit them by hand.
 
-MIT, siehe [LICENSE](LICENSE). Viele Einträge und die Hinweise auf unverzichtbare Domains stammen aus [Perflyst/PiHoleBlocklist](https://github.com/Perflyst/PiHoleBlocklist) (MIT).
+## Credits and license
+
+MIT, see [LICENSE](LICENSE). Built on the work of:
+
+- [Okazakee/tv-dns-blocklist](https://github.com/Okazakee/tv-dns-blocklist) (MIT): imported unchanged and filtered through the protection list. Its [SOURCES.md](https://github.com/Okazakee/tv-dns-blocklist/blob/main/SOURCES.md) documents the evidence for each rule.
+- [Perflyst/PiHoleBlocklist](https://github.com/Perflyst/PiHoleBlocklist) (MIT): many of the hand-picked rules and most of the breakage reports behind the protection list.
+- [Watching TV with the Second-Party](https://arxiv.org/abs/2409.06203) (Anselmi et al., IMC 2024): ACR measurements on Samsung and LG TVs.

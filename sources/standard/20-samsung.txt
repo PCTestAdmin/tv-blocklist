@@ -1,4 +1,4 @@
-# Samsung Tizen: Werbung, ACR, Werbe-Banner im Smart Hub und Telemetrie
+# Samsung Tizen: ads, ACR, Smart Hub banners and telemetry
 samsungads.com
 samsungacr.com
 samsungadhub.com

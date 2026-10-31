@@ -1,3 +1,8 @@
-# Hisense / VIDAA (auch Smart Tech, Toshiba): Werbe-Empfehlungen und Protokoll-Upload
+# Hisense / VIDAA (also Smart Tech, Toshiba): ad recommendations and log upload
 recommend-ui-eu.vidaahub.com
 policy-jrnl-eu.vidaahub.com
+# Same services in every region (af, eu, na, ...); AdGuard format only
+recommend-ui-*.vidaahub.com
+policy-jrnl-*.vidaahub.com
+ter-jrnl-*.vidaahub.com
+exc-jrnl-*.vidaahub.com

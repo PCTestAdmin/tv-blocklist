@@ -1,11 +1,11 @@
-! Title: TV-Blockliste – Standard
-! Description: Werbung, ACR und Tracking auf Smart-TVs. Sicher für den Alltag.
+! Title: TV Blocklist – Standard
+! Description: Smart-TV ads, ACR tracking and telemetry. No known side effects.
 ! Homepage: https://github.com/PCTestAdmin/tv-blocklist
 ! Version: 2026.10.31
-! Rules: 119
-! License: MIT
+! Rules: 281
+! License: MIT (see LICENSE for upstream credits)
 
-! Herstellerübergreifend: ACR (Inhaltserkennung) und TV-Werbenetzwerke
+! Cross-vendor: ACR (automatic content recognition) and TV ad networks
 ||alphonso.tv^
 ||flingo.tv^
 ||api.thetake.com^
@@ -25,11 +25,15 @@
 ||control-zoo-dai-default.tvinteractive.tv^
 ||secure-eu.imrworldwide.com^
 
-! Hisense / VIDAA (auch Smart Tech, Toshiba): Werbe-Empfehlungen und Protokoll-Upload
+! Hisense / VIDAA (also Smart Tech, Toshiba): ad recommendations and log upload
 ||recommend-ui-eu.vidaahub.com^
 ||policy-jrnl-eu.vidaahub.com^
+||recommend-ui-*.vidaahub.com^
+||policy-jrnl-*.vidaahub.com^
+||ter-jrnl-*.vidaahub.com^
+||exc-jrnl-*.vidaahub.com^
 
-! Samsung Tizen: Werbung, ACR, Werbe-Banner im Smart Hub und Telemetrie
+! Samsung Tizen: ads, ACR, Smart Hub banners and telemetry
 ||samsungads.com^
 ||samsungacr.com^
 ||samsungadhub.com^
@@ -46,7 +50,7 @@
 ||premium-videos.telly.com^
 ||i-stream.pl^
 
-! LG webOS: Werbung, ACR und Datensammlung (Customer Data Platform)
+! LG webOS: ads, ACR and customer data platform
 ||lgsmartad.com^
 ||ad.lgappstv.com^
 ||ibis.lgappstv.com^
@@ -60,7 +64,7 @@
 ||aic.cdpsvc.lgtvcommon.com^
 ||aic.rdl.lgtvcommon.com^
 
-! Sony Bravia: Telemetrie
+! Sony Bravia: telemetry
 ||ad8641f3cff742de893d919add74c2bb.ssm1.internet.sony.tv^
 ||ad8641f3cff742de893d919add74c2bb.ssm2.internet.sony.tv^
 ||api-mf1.meta.ndmdhs.com^
@@ -70,7 +74,7 @@
 ||call.me.sel.sony.com^
 ||facemap.foldlife.net^
 
-! Panasonic Viera: Nutzungsstatistik
+! Panasonic Viera: usage statistics
 ||0077777700140002.myhomescreen.tv^
 ||collect.myhomescreen.tv^
 ||usage.myhomescreen.tv^
@@ -112,12 +116,12 @@
 ||usage-us-fy2022.myhomescreen.tv^
 ||vindicosuite.com^
 
-! Philips und Toshiba: Werbung und Telemetrie
+! Philips and Toshiba: ads and telemetry
 ||ad.nettvservices.com^
 ||7345023508.fxmconnect.com^
 ||7345023508.fxm9485766783.com^
 
-! Roku, Amazon Fire TV, Xiaomi Mi TV, Foxtel: Werbung und Telemetrie
+! Roku, Amazon Fire TV, Xiaomi Mi TV, Foxtel: ads and telemetry
 ||logs.roku.com^
 ||display.ravm.tv^
 ||ads.roku.com^
@@ -130,7 +134,7 @@
 ||sdkconfig.ad.intl.xiaomi.com^
 ||foxtel-prod-events.digitalsmiths.net^
 
-! HbbTV (roter Knopf): Werbe-Proxy und Tracking
+! HbbTV (red button): ad proxy and tracking
 ||redbutton-adproxy-lb-prod.redbutton.de^
 ||hbbtv-track.redbutton.de^
 ||hse24.tvtelemetrie.de^
@@ -140,6 +144,166 @@
 ||de.ioam.de^
 ||config.ioam.de^
 
-! Streaming-Apps: Telemetrie
+! Streaming apps: telemetry
 ||ichnaea.netflix.com^
 ||logs.netflix.com^
+
+! okazakee: standard tier
+||ndmdhs.com^
+||samba.tv^
+||social.biv.sony.tv^
+||sonybivstatic-a.akamaihd.net^
+/^ad[0-9a-f]{32}\.ssm[123]\.internet\.sony\.tv$/
+||cjpowercast.com^
+||lgtvcommon.com^
+||rdx2.nextlgsdp.com^
+||ibsstat.lgappstv.com^
+||eic-gfts.lge.com^
+||aic-gfts.lge.com^
+||qt2-ngfts.lge.com^
+||ueiwsp.com^
+/^[a-z0-9]{2,4}-ad-lgsmartad-com\.aws-prd\.net$/
+/^[a-z0-9]{2,4}-info-lgsmartad-com\.aws-prd\.net$/
+/^[a-z0-9]{2,4}-rdx2-lgtvsdp-com\.aws-prd\.net$/
+||acr-au-prd.samsungcloud.tv^
+||acr-br-prd.samsungcloud.tv^
+||acr-ca-prd.samsungcloud.tv^
+||acr-eu-prd.samsungcloud.tv^
+||acr-in-prd.samsungcloud.tv^
+||acr-kr-prd.samsungcloud.tv^
+||acr-mx-prd.samsungcloud.tv^
+||acr-nz-prd.samsungcloud.tv^
+||acr-us-prd.samsungcloud.tv^
+/^acr-[a-z0-9]{2,4}-prd\.samsungcloud\.tv$/
+||samsungtvads.com^
+||sspapi-prd.samsungrs.com^
+||adconsent.samsungrs.com^
+||samsungads.adsmeasurement.com^
+||img-resize-cdn-prod.samsungnyc.com^
+||sca.samsung.com^
+||ureca.samsungapps.com^
+||devicelog.samsungcloudsolution.net^
+||prderrordumpssm.samsungcloudsolution.net^
+||vdterms.samsungcloudsolution.com^
+||sas.samsungcloudsolution.com^
+||svwindow.samsungcloudsolution.com^
+||tvpnlogopus.samsungcloud.tv^
+||tvpnlogopeu.samsungcloud.tv^
+||tvpnlogosus.samsungcloud.tv^
+||tvpnlogodus.samsungcloud.tv^
+||tvpndynamiclogopus.samsungcloud.tv^
+||tvpndynamiclogopeu.samsungcloud.tv^
+||tvpndynamiclogosus.samsungcloud.tv^
+||qoe.samsungcloud.tv^
+||pipeaota.com^
+/^[a-z]pu\.samsungelectronics\.com$/
+||test.samsungrm.net^
+||ter-jrnl-eu.vidaahub.com^
+||exc-jrnl-eu.vidaahub.com^
+||api-logsdk.hismarttv.com^
+||unified-ter.hismarttv.com^
+||unified-exc.hismarttv.com^
+||api-cloudfalcon.hismarttv.com^
+||api-gps-eu.hismarttv.com^
+||rpt-ads.vidaahub.com^
+||rsc-ads.vidaahub.com^
+||rpt-mntz.vidaahub.com^
+||rsc-mntz.vidaahub.com^
+||rpt-mntz-azure.vidaahub.com^
+||monetization-ad-tracking.prod-eu-c.az.vidaahub.com^
+||monetization-tenant-ads.prod-eu-c.az.vidaahub.com^
+||ads-privacy.vidaahub.com^
+||ad-cmp.hismarttv.com^
+||ad-imp.hismarttv.com^
+||ad-download.hismarttv.com^
+||ad-download-mam.hismarttv.com^
+||ads-portal-cdn.vidaatv.net^
+||tracking-vss.vidaahub.com^
+||abtest-tv.vidaahub.com^
+||recommend-ui.vidaahub.com^
+||sttc-az-recommend-ui.vidaahub.com^
+||recommender-launcher.hismarttv.com^
+||api-4know-eu.hismarttv.com^
+||api-shoppingguider.hismarttv.com^
+||hisense-beacons.xumo.com^
+||hisense-lite-beacons.xumo.com^
+||acr.unruly.co^
+||trvdp.com^
+||tvinteractive.tv^
+||ads.vizio.com^
+||al-smetrics.vizio.com^
+||rlog4.vizio.com^
+||rlog_sem.vizio.com^
+||vizio.adsmeasurement.com^
+||impression-proxy-prod.smartcasttv.com^
+||content-engagement-metrics.smartcasttv.com^
+||personalization-prod.smartcasttv.com^
+||experiments-prod.smartcasttv.com^
+||ad-broker-prod.smartcasttv.com^
+||promotions-prod.smartcasttv.com^
+||digitalhomeservices.yahoo.com^
+||widgets.yahoo.com^
+||track.sr.roku.com^
+||traces.sr.roku.com^
+||bif.sr.roku.com^
+||userdata.sr.roku.com^
+||logs.sr.roku.com^
+||item-tracking.dev.sr.roku.com^
+||assets.sr.roku.com^
+||amarillo.sb.roku.com^
+||samples.voice.cti.roku.com^
+||cloudservices.roku.com^
+||analytics.roku.com^
+||beacon.web.roku.com^
+||beacon-partner.web.roku.com^
+||pixel.web.roku.com^
+||customer-feedbacks.web.roku.com^
+||amoeba-plus.web.roku.com^
+||wwwimg.roku.com^
+||lat-services.api.data.roku.com^
+||ads-us-east-1.delivery.roku.com^
+||adservices.roku.com^
+||advertising.roku.com^
+||advertising.us-east-1.msc.roku.com^
+||ads.gcp.roku.com^
+||ads.rokuapi.net^
+||adsmanager.roku.com^
+||ad-eng-bl.prod.rpay.int.roku.com^
+||adeng-identity-prod3.bdp.roku.com^
+||ravm.tv^
+||acr.roku.com^
+||roku.adsmeasurement.com^
+||admeasurement.com^
+||roku-beacons.xumo.com^
+||ravm-staging.data.roku.com^
+||unagi.amazon.com^
+||minerva.devices.a2z.com^
+||insights.video.a2z.com^
+||bugs.firebat.prime-video.amazon.dev^
+||d3p8zr0ffa9t17.cloudfront.net^
+||web.diagnostic.networking.aws.dev^
+||api.statsig.com^
+||mobile-collector.newrelic.com^
+||devicemessaging.us-east-1.amazon.com^
+||ads.titanos.tv^
+||philips-android-promo.titanos.tv^
+||android-promo.titanos.tv^
+||data.mistat.intl.miui.com^
+||mistat.intl.miui.com.edgesuite.net^
+||sdkconfig.ad.xiaomi.com^
+||sys.tv.india.xiaomi.com^
+||tvboss.pandora.xiaomi.com^
+||pull.mitv.pandora.xiaomi.com^
+||dvb.pandora.xiaomi.com^
+||ptmi.gitv.pandora.xiaomi.com^
+||hook.gitv.pandora.xiaomi.com^
+||adx.tv.mi.com^
+||h5.tv.mi.com^
+||in.tv.global.mi.com^
+||api.cupid.ptqy.gitv.tv^
+||pb.bi.gitv.tv^
+||tv.app.migc.xiaomi.com^
+||redbutton-lb-prod.redbutton.de^
+||redbutton.sim-technik.de^
+||hbbtv-extern-fe01.sim-technik.de^
+||logs1409.xiti.com^

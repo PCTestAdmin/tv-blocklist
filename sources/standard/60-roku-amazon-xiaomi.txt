@@ -1,4 +1,4 @@
-# Roku, Amazon Fire TV, Xiaomi Mi TV, Foxtel: Werbung und Telemetrie
+# Roku, Amazon Fire TV, Xiaomi Mi TV, Foxtel: ads and telemetry
 logs.roku.com
 display.ravm.tv
 ads.roku.com

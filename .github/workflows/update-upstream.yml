@@ -1,0 +1,33 @@
+name: Update upstream lists
+
+on:
+  schedule:
+    - cron: "17 4 * * 1"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Fetch upstream lists
+        run: python scripts/update_upstream.py
+      - name: Build lists
+        run: python scripts/build.py
+      - name: Commit if anything changed
+        run: |
+          git add -A sources/upstream lists
+          if git diff --cached --quiet -- sources/upstream; then
+            echo "Upstream unchanged."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Update upstream lists"
+          git push

@@ -1,8 +1,10 @@
-# Schutzliste: Diese Domains braucht der Fernseher für Anmeldung, App-Store, Apps oder Updates.
-# Der Build bricht ab, sobald eine Regel eine dieser Domains (oder eine übergeordnete Domain davon) sperren würde.
-# Quellen: Fehlerberichte aus Perflyst/PiHoleBlocklist, notracking/hosts-blocklists und oisd-Ausnahmen.
+# Protection list: domains TVs need for sign-in, app store, apps or updates.
+# The build fails if one of our rules would block any of them (also via a parent domain, wildcard or regex).
+# "*.domain.tld" would protect every subdomain.
+# Sources: breakage reports in Perflyst/PiHoleBlocklist, notracking/hosts-blocklists, oisd exclusions
+# and DNS logs of a Smart Tech 55UV10V1 (VIDAA). Upstream allowlists in sources/upstream/*.allow.txt are added automatically.
 
-# Hisense / VIDAA: Konto, App-Store, Startbildschirm, Updates
+# Hisense / VIDAA: account, app store, home screen, updates
 auth-em.hismarttv.com
 auth-na.hismarttv.com
 auth-launcher-em.hismarttv.com
@@ -12,7 +14,7 @@ api-launcher-na.hismarttv.com
 api.eu.hismarttv.com
 api.euro.hismarttv.com
 api.us.hismarttv.com
-# VIDAA (vidaahub.com), beobachtet auf Smart Tech 55UV10V1, Firmware V0302.01.00S.N0317
+# VIDAA (vidaahub.com), observed on a Smart Tech 55UV10V1, firmware V0302.01.00S.N0317
 vidaa-base-auth-eu.vidaahub.com
 domain.vidaahub.com
 home-ui-eu.vidaahub.com
@@ -28,7 +30,7 @@ device-ecom.vidaahub.com
 sttc-iot.vidaahub.com
 sttc-bas.vidaahub.com
 
-# Samsung: Konto, Uhrzeit (sonst fallen Netflix/YouTube/Plex aus), Updates, Smart Hub
+# Samsung: account, clock (without it Netflix/YouTube/Plex fail), updates, Smart Hub, TV Plus
 auth.samsungosp.com
 time.samsungcloudsolution.com
 cdn.samsungcloudsolution.com
@@ -52,18 +54,18 @@ sso.internetat.tv
 multiscreen.samsung.com
 dev-multiscreen.samsung.com
 
-# LG: Content Store, Vorschaubilder, Updates
+# LG: Content Store, thumbnails, updates
 lgtvsdp.com
 ngfts.lge.com
 snu.lge.com
 us.lgtvsdp.com
 jp.lgtvsdp.com
+nextlgsdp.com
 ngfts.nextlgsdp.com
 de.nextlgsdp.com
 us.nextlgsdp.com
-us.service.lgtvcommon.com
 
-# Sony: Apps und Updates
+# Sony: apps and updates
 applicast.ga.sony.net
 update.biv.sony.tv
 reg.biv.sony.tv
@@ -74,7 +76,7 @@ ssm3.internet.sony.tv
 portal.store.sonyentertainmentnetwork.com
 bravia.dl.playstation.net
 
-# Philips, Panasonic
+# Philips, Panasonic, Vizio
 deviceportal.nettvservices.com
 epg.corio.com
 vcs.vdspf.com
@@ -89,10 +91,10 @@ mhc-xpana-us.myhomescreen.tv
 api.vizio.com
 images.vizio.com
 
-# Google TV / Android TV: Startbildschirm
+# Google TV / Android TV: home screen
 androidtvlauncherxfe-pa.googleapis.com
 
-# Amazon Fire TV: App-Store, Installation, Updates
+# Amazon Fire TV: app store, installs, updates, Alexa
 device-messaging-na.amazon.com
 mas-sdk.amazon.com
 mas-ext.amazon.com
@@ -106,7 +108,7 @@ ftv-smp.ntp-fireos.com
 # Xiaomi
 data.mistat.intl.xiaomi.com
 
-# Streaming-Apps
+# Streaming apps
 secure.netflix.com
 api-global.netflix.com
 appboot.netflix.com
@@ -126,7 +128,7 @@ tv-static.scdn.co
 apicache.vudu.com
 api.nfl.com
 
-# HbbTV / Mediatheken
+# HbbTV / public broadcasters' catch-up apps
 hbbtv.zdf.de
 hbbtv.prosieben.de
 hbbtv.redbutton.de

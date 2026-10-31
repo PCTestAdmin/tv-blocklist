@@ -1,4 +1,4 @@
-# HbbTV (roter Knopf): Werbe-Proxy und Tracking
+# HbbTV (red button): ad proxy and tracking
 redbutton-adproxy-lb-prod.redbutton.de
 hbbtv-track.redbutton.de
 hse24.tvtelemetrie.de

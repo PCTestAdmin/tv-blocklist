@@ -1,4 +1,4 @@
-name: Listen prüfen
+name: Check lists
 
 on:
   push:
@@ -12,5 +12,5 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: Quellen prüfen und lists/ vergleichen
+      - name: Validate sources and verify lists/ is up to date
         run: python scripts/build.py --check

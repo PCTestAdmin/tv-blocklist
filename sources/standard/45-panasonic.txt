@@ -1,4 +1,4 @@
-# Panasonic Viera: Nutzungsstatistik
+# Panasonic Viera: usage statistics
 0077777700140002.myhomescreen.tv
 collect.myhomescreen.tv
 usage.myhomescreen.tv

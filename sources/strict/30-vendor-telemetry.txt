@@ -1,4 +1,4 @@
-# Hersteller-Telemetrie ohne bekannte Ausfälle, aber mit unklarem Zweck. Erst nach Test mit Standard verwenden.
+# Vendor telemetry with no known breakage but unclear purpose. Try Standard first.
 api-gps-em.hismarttv.com
 api-gps-na.hismarttv.com
 msg-em.hismarttv.com
@@ -7,10 +7,8 @@ unified-ter-na.hismarttv.com
 mhc-sec-eu.myhomescreen.tv
 mhc-sec-us.myhomescreen.tv
 bravia-cfgdst-ore-pro.bda.ndmdhs.com
-aic-gfts.nextlgsdp.com
 legacyportal.nettvservices.com
 nettv.corio.com
 data.arqiva.tv
 cloud.arqiva.tv
 fls-eu.amazon.com
-fls-na.amazon.com

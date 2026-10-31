@@ -1,4 +1,4 @@
-# LG webOS: Werbung, ACR und Datensammlung (Customer Data Platform)
+# LG webOS: ads, ACR and customer data platform
 lgsmartad.com
 ad.lgappstv.com
 ibis.lgappstv.com

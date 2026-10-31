@@ -1,4 +1,4 @@
-# HbbTV-Apps privater Sender und Shopping-Kanäle (Einblend-Werbung). Der rote Knopf dieser Sender funktioniert dann nicht mehr.
+# HbbTV apps of commercial and shopping channels (overlay ads). The red button of these channels stops working.
 hbbtv.kabeleins.de
 hbbtv.sat1.de
 hbbtv.sixx.de

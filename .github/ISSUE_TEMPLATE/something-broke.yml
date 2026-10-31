@@ -1,0 +1,29 @@
+name: Something broke
+description: An app, the store, sign-in or updates stopped working with this list.
+labels: [false-positive]
+body:
+  - type: input
+    id: model
+    attributes:
+      label: TV model and firmware
+      placeholder: "Smart Tech 55UV10V1, V0302.01.00S.N0317"
+    validations:
+      required: true
+  - type: dropdown
+    id: list
+    attributes:
+      label: Which list?
+      options: [Standard, Strict]
+    validations:
+      required: true
+  - type: input
+    id: domain
+    attributes:
+      label: Domain that fixed it when unblocked
+      placeholder: "example.vidaahub.com"
+  - type: textarea
+    id: what
+    attributes:
+      label: What stopped working?
+    validations:
+      required: true
