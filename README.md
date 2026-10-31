@@ -116,10 +116,18 @@ If it only happens with **Strict**, switch back to **Standard**.
 
 ## Find what your TV sends
 
-[`scripts/analyze_querylog.py`](scripts/analyze_querylog.py) reads AdGuard Home's `querylog.json` (in AdGuard Home's `data/` folder) or a plain list of domains, and shows how this list treats every domain your TV contacted:
+[`scripts/analyze_querylog.py`](scripts/analyze_querylog.py) shows how this list treats every domain your TV contacted. It reads either AdGuard Home's `querylog.json` or any text with domains in it, such as rows copied from the query log page.
+
+`querylog.json` lives on the machine that runs AdGuard Home, in its data folder (`/opt/AdGuardHome/data/` on Linux, `/opt/adguardhome/work/data/` in Docker). Copy it next to the script, then:
 
 ```bash
 python scripts/analyze_querylog.py querylog.json --client 192.168.1.50
+```
+
+No access to that machine? Filter the query log page by your TV, select the rows, copy them, and paste them in:
+
+```bash
+python scripts/analyze_querylog.py -
 ```
 
 ```

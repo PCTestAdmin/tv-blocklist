@@ -1,13 +1,19 @@
 #!/usr/bin/env python3
 """Shows which domains your TV contacts and how this blocklist treats each one.
 
-Input is either AdGuard Home's query log (querylog.json, one JSON object per
-line, found in AdGuard Home's data/ folder) or a plain text file with one
-domain per line (e.g. copied from Pi-hole's query log).
+Input is one of:
+  - AdGuard Home's query log, querylog.json (one JSON object per line). It lives
+    in AdGuard Home's data folder on the machine running AdGuard Home, e.g.
+    /opt/AdGuardHome/data/ (Linux), /opt/adguardhome/work/data/ (Docker)
+    or AdGuardHome\\data\\ (Windows).
+  - Any text containing domains, e.g. rows copied from the AdGuard Home or
+    Pi-hole query log page. Pass "-" to paste it (finish with Ctrl+Z, Enter on
+    Windows or Ctrl+D elsewhere).
 
 Usage:
-  python scripts/analyze_querylog.py querylog.json --client 192.168.178.33
-  python scripts/analyze_querylog.py domains.txt
+  python scripts/analyze_querylog.py querylog.json --client 192.168.1.50
+  python scripts/analyze_querylog.py copied-log.txt
+  python scripts/analyze_querylog.py -
 
 Every domain is reported as one of:
   standard   blocked by the standard list
@@ -30,20 +36,37 @@ HINT = re.compile(r"(^|[.-])(ads?|adv|track(ing)?|log(s|sdk)?|stats?|metrics?|te
                   r"recommend|imp|impr|survey)([.-]|\d|$)")
 
 
+DOMAIN = re.compile(r"\b(?:[a-z0-9_](?:[a-z0-9_-]*[a-z0-9_])?\.)+[a-z]{2,}\b", re.I)
+
+
+def read_lines(path):
+    if path == "-":
+        print("Paste the log, then press Ctrl+Z and Enter (Windows) or Ctrl+D:", file=sys.stderr)
+        return sys.stdin.read().splitlines()
+    try:
+        with open(path, encoding="utf-8", errors="replace") as f:
+            return f.read().splitlines()
+    except FileNotFoundError:
+        sys.exit(f"File not found: {path}\n\n"
+                 "querylog.json is on the machine that runs AdGuard Home (see --help for the usual\n"
+                 "folders). If you can't get at it, copy the rows from the query log page into a\n"
+                 "text file and pass that instead, or pass '-' and paste them.")
+
+
 def read_domains(path, client):
     counts = Counter()
-    with open(path, encoding="utf-8", errors="replace") as f:
-        for line in f:
-            line = line.strip()
-            if not line or line.startswith("#"):
+    for line in read_lines(path):
+        line = line.strip()
+        if not line or line.startswith("#"):
+            continue
+        if line.startswith("{"):
+            entry = json.loads(line)
+            if client and entry.get("IP") != client:
                 continue
-            if line.startswith("{"):
-                entry = json.loads(line)
-                if client and entry.get("IP") != client:
-                    continue
-                domain = entry.get("QH", "")
-            else:
-                domain = line.split()[-1]
+            domains = [entry.get("QH", "")]
+        else:
+            domains = DOMAIN.findall(line)
+        for domain in domains:
             if domain:
                 counts[domain.lower().rstrip(".")] += 1
     return counts
