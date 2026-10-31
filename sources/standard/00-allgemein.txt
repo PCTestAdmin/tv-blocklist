@@ -1,0 +1,16 @@
+# Herstellerübergreifend: TV-Werbenetzwerke und ACR (Inhaltserkennung: der Fernseher meldet, was du schaust)
+smartclip.com
+smartclip.net
+yumenetworks.com
+alphonso.tv
+api.thetake.com
+flingo.tv
+# Samba TV (ACR, u. a. Sony, Toshiba, Philips, TCL)
+api.cid.samba.tv
+events.cid.samba.tv
+platform.cid.samba.tv
+# Inscape / tvinteractive (ACR, u. a. Vizio)
+control.tvinteractive.tv
+control2.tvinteractive.tv
+mcp.tvinteractive.tv
+tvmeta-dynamic.tvinteractive.tv

@@ -1,0 +1,83 @@
+# Title: TV-Blockliste – Streng
+# Description: Standard plus Hersteller-Telemetrie und Startseiten-Inhalte. Kann Apps oder Updates stören.
+# Homepage: https://github.com/PCTestAdmin/tv-blocklist
+# Version: 2026.10.31
+# Rules: 59
+# License: MIT
+
+# Herstellerübergreifend: TV-Werbenetzwerke und ACR (Inhaltserkennung: der Fernseher meldet, was du schaust)
+smartclip.com
+smartclip.net
+yumenetworks.com
+alphonso.tv
+api.thetake.com
+flingo.tv
+api.cid.samba.tv
+events.cid.samba.tv
+platform.cid.samba.tv
+control.tvinteractive.tv
+control2.tvinteractive.tv
+mcp.tvinteractive.tv
+tvmeta-dynamic.tvinteractive.tv
+
+# Hisense / VIDAA (auch Smart Tech, Toshiba): Werbe-Empfehlungen auf dem Startbildschirm
+recommend-ui-eu.vidaahub.com
+
+# Samsung Tizen: Werbung, ACR und Werbe-Banner im Smart Hub
+samsungads.com
+samsungacr.com
+samsungadhub.com
+adgrx.com
+gamespromotion.samsungcloudsolution.com
+notice.samsungcloudsolution.com
+noticecdn.samsungcloudsolution.com
+noticefile.samsungcloudsolution.com
+
+# LG webOS: Werbung auf Startbildschirm und im Content Store
+lgsmartad.com
+ad.lgappstv.com
+lgad.cjpowercast.com.edgesuite.net
+
+# Philips, Panasonic, Toshiba, Roku, Xiaomi: Werbung und ACR
+ad.nettvservices.com
+vindicosuite.com
+7345023508.fxmconnect.com
+7345023508.fxm9485766783.com
+display.ravm.tv
+sdkconfig.ad.intl.xiaomi.com
+
+# HbbTV (roter Knopf): Werbe-Proxy und Tracking deutscher Sender
+redbutton-adproxy-lb-prod.redbutton.de
+hbbtv-track.redbutton.de
+ad.71i.de
+tracksrv.zdf.de
+
+# Hisense / VIDAA: Telemetrie. Anmeldung, App-Store und Startbildschirm bleiben erreichbar (siehe never-block.txt).
+api-gps-em.hismarttv.com
+api-gps-na.hismarttv.com
+msg-em.hismarttv.com
+msg-na.hismarttv.com
+unified-ter-na.hismarttv.com
+
+# Samsung und LG: Fehlerberichte, Nutzungsstatistik und Musikerkennung
+prderrordumphsm.samsungcloudsolution.com
+musicid.samsungcloudsolution.com
+log.internetat.tv
+connecttv.pelmorex.com
+ibis.lgappstv.com
+ibs.lgappstv.com
+
+# Sony, Amazon, Xiaomi, Roku, Netflix: Nutzungsstatistik
+call.me.sel.sony.com
+api-mf1.meta.ndmdhs.com
+b02.black.ndmdhs.com
+device-metrics-us.amazon.com
+mads-eu.amazon.com
+mobileanalytics.us-east-1.amazonaws.com
+tracking.intl.miui.com
+logs.roku.com
+ichnaea.netflix.com
+logs.netflix.com
+script.ioam.de
+de.ioam.de
+config.ioam.de

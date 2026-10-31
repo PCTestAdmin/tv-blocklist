@@ -1,0 +1,5 @@
+# HbbTV (roter Knopf): Werbe-Proxy und Tracking deutscher Sender
+redbutton-adproxy-lb-prod.redbutton.de
+hbbtv-track.redbutton.de
+ad.71i.de
+tracksrv.zdf.de

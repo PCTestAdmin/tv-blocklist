@@ -1,0 +1,100 @@
+# Schutzliste: Diese Domains braucht der Fernseher für Anmeldung, App-Store, Apps oder Updates.
+# Der Build bricht ab, sobald eine Regel eine dieser Domains (oder eine übergeordnete Domain davon) sperren würde.
+# Quellen: Fehlerberichte aus Perflyst/PiHoleBlocklist, notracking/hosts-blocklists und oisd-Ausnahmen.
+
+# Hisense / VIDAA: Konto, App-Store, Startbildschirm, Updates
+auth-em.hismarttv.com
+auth-na.hismarttv.com
+auth-launcher-em.hismarttv.com
+auth-launcher-na.hismarttv.com
+api-launcher-em.hismarttv.com
+api-launcher-na.hismarttv.com
+api.eu.hismarttv.com
+api.euro.hismarttv.com
+api.us.hismarttv.com
+# VIDAA (vidaahub.com), beobachtet auf Smart Tech 55UV10V1, Firmware V0302.01.00S.N0317
+vidaa-base-auth-eu.vidaahub.com
+domain.vidaahub.com
+home-ui-eu.vidaahub.com
+layout-ui-eu.vidaahub.com
+static-ui.vidaahub.com
+tvmodules-vidaa.vidaahub.com
+time-bas-eu.vidaahub.com
+geo-bas-eu.vidaahub.com
+ota-tv.vidaahub.com
+iot-voice.vidaahub.com
+iot-voice-eu.vidaahub.com
+device-ecom.vidaahub.com
+sttc-iot.vidaahub.com
+sttc-bas.vidaahub.com
+
+# Samsung: Konto, Uhrzeit (sonst fallen Netflix/YouTube/Plex aus), Updates, Smart Hub
+auth.samsungosp.com
+time.samsungcloudsolution.com
+cdn.samsungcloudsolution.com
+configprd.samsungcloudsolution.net
+lcprd1.samsungcloudsolution.net
+otnprd8.samsungcloudsolution.net
+otnprd9.samsungcloudsolution.net
+otnprd10.samsungcloudsolution.net
+otnprd11.samsungcloudsolution.net
+otn.samsungcloudcdn.com
+www.samsungotn.net
+infolink.pavv.co.kr
+sso.internetat.tv
+multiscreen.samsung.com
+dev-multiscreen.samsung.com
+
+# LG: Content Store, Vorschaubilder, Updates
+lgtvsdp.com
+ngfts.lge.com
+snu.lge.com
+
+# Sony: Apps und Updates
+applicast.ga.sony.net
+update.biv.sony.tv
+reg.biv.sony.tv
+service.biv.sony.tv
+ssm1.internet.sony.tv
+ssm2.internet.sony.tv
+ssm3.internet.sony.tv
+
+# Philips, Panasonic
+deviceportal.nettvservices.com
+epg.corio.com
+vcs.vdspf.com
+mhc-ajax-eu.myhomescreen.tv
+mhc-xpana-eu.myhomescreen.tv
+
+# Google TV / Android TV: Startbildschirm
+androidtvlauncherxfe-pa.googleapis.com
+
+# Amazon Fire TV: App-Store, Installation, Updates
+device-messaging-na.amazon.com
+mas-sdk.amazon.com
+mas-ext.amazon.com
+amazonadsi-a.akamaihd.net
+
+# Xiaomi
+data.mistat.intl.xiaomi.com
+
+# Streaming-Apps
+secure.netflix.com
+api-global.netflix.com
+appboot.netflix.com
+nrdp.nccp.netflix.com
+nrdp.prod.ftl.netflix.com
+nrdp.prod.cloud.netflix.com
+cdn-0.nflximg.com
+customerevents.netflix.com
+www.youtube.com
+youtubei.googleapis.com
+api-tv.spotify.com
+tv.deezer.com
+
+# HbbTV / Mediatheken
+hbbtv.zdf.de
+hbbtv.prosieben.de
+hbbtv.redbutton.de
+hbbtv.kika.de
+itv.ard.de

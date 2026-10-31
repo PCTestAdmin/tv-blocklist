@@ -1,0 +1,83 @@
+# Title: TV-Blockliste – Streng
+# Description: Standard plus Hersteller-Telemetrie und Startseiten-Inhalte. Kann Apps oder Updates stören.
+# Homepage: https://github.com/PCTestAdmin/tv-blocklist
+# Version: 2026.10.31
+# Rules: 59
+# License: MIT
+
+# Herstellerübergreifend: TV-Werbenetzwerke und ACR (Inhaltserkennung: der Fernseher meldet, was du schaust)
+0.0.0.0 smartclip.com
+0.0.0.0 smartclip.net
+0.0.0.0 yumenetworks.com
+0.0.0.0 alphonso.tv
+0.0.0.0 api.thetake.com
+0.0.0.0 flingo.tv
+0.0.0.0 api.cid.samba.tv
+0.0.0.0 events.cid.samba.tv
+0.0.0.0 platform.cid.samba.tv
+0.0.0.0 control.tvinteractive.tv
+0.0.0.0 control2.tvinteractive.tv
+0.0.0.0 mcp.tvinteractive.tv
+0.0.0.0 tvmeta-dynamic.tvinteractive.tv
+
+# Hisense / VIDAA (auch Smart Tech, Toshiba): Werbe-Empfehlungen auf dem Startbildschirm
+0.0.0.0 recommend-ui-eu.vidaahub.com
+
+# Samsung Tizen: Werbung, ACR und Werbe-Banner im Smart Hub
+0.0.0.0 samsungads.com
+0.0.0.0 samsungacr.com
+0.0.0.0 samsungadhub.com
+0.0.0.0 adgrx.com
+0.0.0.0 gamespromotion.samsungcloudsolution.com
+0.0.0.0 notice.samsungcloudsolution.com
+0.0.0.0 noticecdn.samsungcloudsolution.com
+0.0.0.0 noticefile.samsungcloudsolution.com
+
+# LG webOS: Werbung auf Startbildschirm und im Content Store
+0.0.0.0 lgsmartad.com
+0.0.0.0 ad.lgappstv.com
+0.0.0.0 lgad.cjpowercast.com.edgesuite.net
+
+# Philips, Panasonic, Toshiba, Roku, Xiaomi: Werbung und ACR
+0.0.0.0 ad.nettvservices.com
+0.0.0.0 vindicosuite.com
+0.0.0.0 7345023508.fxmconnect.com
+0.0.0.0 7345023508.fxm9485766783.com
+0.0.0.0 display.ravm.tv
+0.0.0.0 sdkconfig.ad.intl.xiaomi.com
+
+# HbbTV (roter Knopf): Werbe-Proxy und Tracking deutscher Sender
+0.0.0.0 redbutton-adproxy-lb-prod.redbutton.de
+0.0.0.0 hbbtv-track.redbutton.de
+0.0.0.0 ad.71i.de
+0.0.0.0 tracksrv.zdf.de
+
+# Hisense / VIDAA: Telemetrie. Anmeldung, App-Store und Startbildschirm bleiben erreichbar (siehe never-block.txt).
+0.0.0.0 api-gps-em.hismarttv.com
+0.0.0.0 api-gps-na.hismarttv.com
+0.0.0.0 msg-em.hismarttv.com
+0.0.0.0 msg-na.hismarttv.com
+0.0.0.0 unified-ter-na.hismarttv.com
+
+# Samsung und LG: Fehlerberichte, Nutzungsstatistik und Musikerkennung
+0.0.0.0 prderrordumphsm.samsungcloudsolution.com
+0.0.0.0 musicid.samsungcloudsolution.com
+0.0.0.0 log.internetat.tv
+0.0.0.0 connecttv.pelmorex.com
+0.0.0.0 ibis.lgappstv.com
+0.0.0.0 ibs.lgappstv.com
+
+# Sony, Amazon, Xiaomi, Roku, Netflix: Nutzungsstatistik
+0.0.0.0 call.me.sel.sony.com
+0.0.0.0 api-mf1.meta.ndmdhs.com
+0.0.0.0 b02.black.ndmdhs.com
+0.0.0.0 device-metrics-us.amazon.com
+0.0.0.0 mads-eu.amazon.com
+0.0.0.0 mobileanalytics.us-east-1.amazonaws.com
+0.0.0.0 tracking.intl.miui.com
+0.0.0.0 logs.roku.com
+0.0.0.0 ichnaea.netflix.com
+0.0.0.0 logs.netflix.com
+0.0.0.0 script.ioam.de
+0.0.0.0 de.ioam.de
+0.0.0.0 config.ioam.de
