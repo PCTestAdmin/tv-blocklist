@@ -36,7 +36,9 @@ HINT = re.compile(r"(^|[.-])(ads?|adv|track(ing)?|log(s|sdk)?|stats?|metrics?|te
                   r"recommend|imp|impr|survey)([.-]|\d|$)")
 
 
-DOMAIN = re.compile(r"\b(?:[a-z0-9_](?:[a-z0-9_-]*[a-z0-9_])?\.)+[a-z]{2,}\b", re.I)
+DOMAIN = re.compile(r"(?<![\w/.-])(?:[a-z0-9_](?:[a-z0-9_-]*[a-z0-9_])?\.)+[a-z]{2,}(?![\w/.-])", re.I)
+# File names that show up in pasted text (e.g. this script's own output), not domains
+NOT_DOMAIN = re.compile(r"\.(txt|json|py|md|yml|yaml|csv|log|list|conf)$", re.I)
 
 
 def read_lines(path):
@@ -65,7 +67,7 @@ def read_domains(path, client):
                 continue
             domains = [entry.get("QH", "")]
         else:
-            domains = DOMAIN.findall(line)
+            domains = [d for d in DOMAIN.findall(line) if not NOT_DOMAIN.search(d)]
         for domain in domains:
             if domain:
                 counts[domain.lower().rstrip(".")] += 1
