@@ -1,7 +1,7 @@
 ! Title: TV Blocklist – Allowlist
 ! Description: Optional. Unblocks domains TVs need when other, broader lists block them.
 ! Homepage: https://github.com/PCTestAdmin/tv-blocklist
-! Version: 2026.10.31
+! Version: 2026.11.01
 ! Rules: 242
 ! License: MIT (see LICENSE for upstream credits)
 
