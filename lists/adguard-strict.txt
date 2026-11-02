@@ -1,8 +1,8 @@
 ! Title: TV Blocklist – Strict
 ! Description: Standard plus home-screen recommendations, broadcaster HbbTV apps and telemetry of unclear purpose. Removes some features.
 ! Homepage: https://github.com/PCTestAdmin/tv-blocklist
-! Version: 2026.11.01
-! Rules: 421
+! Version: 2026.11.02
+! Rules: 435
 ! License: MIT (see LICENSE for upstream credits)
 
 ! Cross-vendor: ACR (automatic content recognition) and TV ad networks
@@ -199,6 +199,8 @@
 ||samsungads.adsmeasurement.com^
 ||img-resize-cdn-prod.samsungnyc.com^
 ||sca.samsung.com^
+||dls.di.atlas.samsung.com^
+||regi.di.atlas.samsung.com^
 ||ureca.samsungapps.com^
 ||devicelog.samsungcloudsolution.net^
 ||prderrordumpssm.samsungcloudsolution.net^
@@ -213,6 +215,7 @@
 ||tvpndynamiclogopeu.samsungcloud.tv^
 ||tvpndynamiclogosus.samsungcloud.tv^
 ||qoe.samsungcloud.tv^
+||samsung-beacons.xumo.com^
 ||pipeaota.com^
 /^[a-z]pu\.samsungelectronics\.com$/
 ||test.samsungrm.net^
@@ -253,6 +256,7 @@
 ||rlog4.vizio.com^
 ||rlog_sem.vizio.com^
 ||vizio.adsmeasurement.com^
+||vizio-beacons.xumo.com^
 ||impression-proxy-prod.smartcasttv.com^
 ||content-engagement-metrics.smartcasttv.com^
 ||personalization-prod.smartcasttv.com^
@@ -306,6 +310,7 @@
 ||ads.titanos.tv^
 ||philips-android-promo.titanos.tv^
 ||android-promo.titanos.tv^
+||philips-beacons.xumo.com^
 ||data.mistat.intl.miui.com^
 ||mistat.intl.miui.com.edgesuite.net^
 ||sdkconfig.ad.xiaomi.com^
@@ -321,10 +326,12 @@
 ||api.cupid.ptqy.gitv.tv^
 ||pb.bi.gitv.tv^
 ||tv.app.migc.xiaomi.com^
+||panasonic-beacons.xumo.com^
 ||redbutton-lb-prod.redbutton.de^
 ||redbutton.sim-technik.de^
 ||hbbtv-extern-fe01.sim-technik.de^
 ||logs1409.xiti.com^
+||android-tv-beacons.xumo.com^
 
 ! Home-screen recommendations and promo tiles. Apps keep working; recommendation rows go empty.
 ||us.recommend.lgtvcommon.com^
@@ -423,6 +430,13 @@
 ||d3mjsomixevyw7.cloudfront.net^
 ||d37ju0xanoz6gh.cloudfront.net^
 ||ads.samsungapps.com^
+||sdkconfig.xiaomi.com^
+||sdkconfig.eu.xiaomi.com^
+||sdkconfig.india.xiaomi.com^
+||sdkconfig.intl.xiaomi.com^
+||sdkconfig.rus.xiaomi.com^
+||ads.na.prod.channels.firetv.amazon.dev^
+||ads.eu.prod.channels.firetv.amazon.dev^
 ||ssai.aniview.com^
 ||ads.spotx.tv^
 ||base-ai.vidaahub.com^

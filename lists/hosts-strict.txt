@@ -1,8 +1,8 @@
 # Title: TV Blocklist – Strict
 # Description: Standard plus home-screen recommendations, broadcaster HbbTV apps and telemetry of unclear purpose. Removes some features.
 # Homepage: https://github.com/PCTestAdmin/tv-blocklist
-# Version: 2026.11.01
-# Rules: 411
+# Version: 2026.11.02
+# Rules: 425
 # License: MIT (see LICENSE for upstream credits)
 
 # Cross-vendor: ACR (automatic content recognition) and TV ad networks
@@ -190,6 +190,8 @@
 0.0.0.0 samsungads.adsmeasurement.com
 0.0.0.0 img-resize-cdn-prod.samsungnyc.com
 0.0.0.0 sca.samsung.com
+0.0.0.0 dls.di.atlas.samsung.com
+0.0.0.0 regi.di.atlas.samsung.com
 0.0.0.0 ureca.samsungapps.com
 0.0.0.0 devicelog.samsungcloudsolution.net
 0.0.0.0 prderrordumpssm.samsungcloudsolution.net
@@ -204,6 +206,7 @@
 0.0.0.0 tvpndynamiclogopeu.samsungcloud.tv
 0.0.0.0 tvpndynamiclogosus.samsungcloud.tv
 0.0.0.0 qoe.samsungcloud.tv
+0.0.0.0 samsung-beacons.xumo.com
 0.0.0.0 pipeaota.com
 0.0.0.0 test.samsungrm.net
 0.0.0.0 ter-jrnl-eu.vidaahub.com
@@ -243,6 +246,7 @@
 0.0.0.0 rlog4.vizio.com
 0.0.0.0 rlog_sem.vizio.com
 0.0.0.0 vizio.adsmeasurement.com
+0.0.0.0 vizio-beacons.xumo.com
 0.0.0.0 impression-proxy-prod.smartcasttv.com
 0.0.0.0 content-engagement-metrics.smartcasttv.com
 0.0.0.0 personalization-prod.smartcasttv.com
@@ -296,6 +300,7 @@
 0.0.0.0 ads.titanos.tv
 0.0.0.0 philips-android-promo.titanos.tv
 0.0.0.0 android-promo.titanos.tv
+0.0.0.0 philips-beacons.xumo.com
 0.0.0.0 data.mistat.intl.miui.com
 0.0.0.0 mistat.intl.miui.com.edgesuite.net
 0.0.0.0 sdkconfig.ad.xiaomi.com
@@ -311,10 +316,12 @@
 0.0.0.0 api.cupid.ptqy.gitv.tv
 0.0.0.0 pb.bi.gitv.tv
 0.0.0.0 tv.app.migc.xiaomi.com
+0.0.0.0 panasonic-beacons.xumo.com
 0.0.0.0 redbutton-lb-prod.redbutton.de
 0.0.0.0 redbutton.sim-technik.de
 0.0.0.0 hbbtv-extern-fe01.sim-technik.de
 0.0.0.0 logs1409.xiti.com
+0.0.0.0 android-tv-beacons.xumo.com
 
 # Home-screen recommendations and promo tiles. Apps keep working; recommendation rows go empty.
 0.0.0.0 us.recommend.lgtvcommon.com
@@ -413,6 +420,13 @@
 0.0.0.0 d3mjsomixevyw7.cloudfront.net
 0.0.0.0 d37ju0xanoz6gh.cloudfront.net
 0.0.0.0 ads.samsungapps.com
+0.0.0.0 sdkconfig.xiaomi.com
+0.0.0.0 sdkconfig.eu.xiaomi.com
+0.0.0.0 sdkconfig.india.xiaomi.com
+0.0.0.0 sdkconfig.intl.xiaomi.com
+0.0.0.0 sdkconfig.rus.xiaomi.com
+0.0.0.0 ads.na.prod.channels.firetv.amazon.dev
+0.0.0.0 ads.eu.prod.channels.firetv.amazon.dev
 0.0.0.0 ssai.aniview.com
 0.0.0.0 ads.spotx.tv
 0.0.0.0 base-ai.vidaahub.com

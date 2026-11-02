@@ -57,6 +57,8 @@ adconsent.samsungrs.com
 samsungads.adsmeasurement.com
 img-resize-cdn-prod.samsungnyc.com
 sca.samsung.com
+dls.di.atlas.samsung.com
+regi.di.atlas.samsung.com
 ureca.samsungapps.com
 devicelog.samsungcloudsolution.net
 prderrordumphsm.samsungcloudsolution.com
@@ -75,6 +77,7 @@ tvpndynamiclogopeu.samsungcloud.tv
 tvpndynamiclogosus.samsungcloud.tv
 qoe.samsungcloud.tv
 connecttv.pelmorex.com
+samsung-beacons.xumo.com
 premium-videos.telly.com
 log.internetat.tv
 game.internetat.tv
@@ -125,6 +128,7 @@ al-smetrics.vizio.com
 rlog4.vizio.com
 rlog_sem.vizio.com
 vizio.adsmeasurement.com
+vizio-beacons.xumo.com
 impression-proxy-prod.smartcasttv.com
 content-engagement-metrics.smartcasttv.com
 personalization-prod.smartcasttv.com
@@ -186,6 +190,7 @@ mas-sdk.amazon.com
 ads.titanos.tv
 philips-android-promo.titanos.tv
 android-promo.titanos.tv
+philips-beacons.xumo.com
 ad.nettvservices.com
 legacyportal.nettvservices.com
 nettv.corio.com
@@ -209,6 +214,7 @@ pb.bi.gitv.tv
 tv.app.migc.xiaomi.com
 myhomescreen.tv
 vindicosuite.com
+panasonic-beacons.xumo.com
 redbutton-adproxy-lb-prod.redbutton.de
 redbutton-lb-prod.redbutton.de
 redbutton.sim-technik.de
@@ -223,3 +229,4 @@ logs1409.xiti.com
 secure-eu.imrworldwide.com
 7345023508.fxmconnect.com
 7345023508.fxm9485766783.com
+android-tv-beacons.xumo.com

@@ -71,6 +71,13 @@ d2tnx644ijgq6i.cloudfront.net
 d3mjsomixevyw7.cloudfront.net
 d37ju0xanoz6gh.cloudfront.net
 ads.samsungapps.com
+sdkconfig.xiaomi.com
+sdkconfig.eu.xiaomi.com
+sdkconfig.india.xiaomi.com
+sdkconfig.intl.xiaomi.com
+sdkconfig.rus.xiaomi.com
+ads.na.prod.channels.firetv.amazon.dev
+ads.eu.prod.channels.firetv.amazon.dev
 ssai.aniview.com
 ads.spotx.tv
 base-ai.vidaahub.com
