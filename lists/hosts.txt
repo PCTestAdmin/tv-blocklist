@@ -1,8 +1,8 @@
 # Title: TV Blocklist – Standard
 # Description: Smart-TV ads, ACR tracking and telemetry. No known side effects.
 # Homepage: https://github.com/PCTestAdmin/tv-blocklist
-# Version: 2026.11.02
-# Rules: 294
+# Version: 2026.11.26
+# Rules: 316
 # License: MIT (see LICENSE for upstream credits)
 
 # Cross-vendor: ACR (automatic content recognition) and TV ad networks
@@ -29,6 +29,29 @@
 # Hisense / VIDAA (also Smart Tech, Toshiba): ad recommendations and log upload
 0.0.0.0 recommend-ui-eu.vidaahub.com
 0.0.0.0 policy-jrnl-eu.vidaahub.com
+
+# VIDAA: regional journal and monetization reporting endpoints
+0.0.0.0 ter-jrnl-af.vidaahub.com
+0.0.0.0 ter-jrnl-as.vidaahub.com
+0.0.0.0 ter-jrnl-ee.vidaahub.com
+0.0.0.0 ter-jrnl-la.vidaahub.com
+0.0.0.0 ter-jrnl-me.vidaahub.com
+0.0.0.0 ter-jrnl-na.vidaahub.com
+0.0.0.0 ter-jrnl-oc.vidaahub.com
+0.0.0.0 ter-jrnl-ru.vidaahub.com
+0.0.0.0 ter-jrnl-sa.vidaahub.com
+0.0.0.0 ter-jrnl.vidaahub.com
+0.0.0.0 exc-jrnl-af.vidaahub.com
+0.0.0.0 exc-jrnl-as.vidaahub.com
+0.0.0.0 exc-jrnl-ee.vidaahub.com
+0.0.0.0 exc-jrnl-la.vidaahub.com
+0.0.0.0 exc-jrnl-me.vidaahub.com
+0.0.0.0 exc-jrnl-na.vidaahub.com
+0.0.0.0 exc-jrnl-oc.vidaahub.com
+0.0.0.0 exc-jrnl-ru.vidaahub.com
+0.0.0.0 exc-jrnl-sa.vidaahub.com
+0.0.0.0 exc-jrnl.vidaahub.com
+0.0.0.0 rpt-mntz-aws.vidaahub.com
 
 # Vewd (formerly Opera TV) app platform on VIDAA, Philips, Sony and others: logging and metrics
 0.0.0.0 log.core.cloud.vewd.com
@@ -147,6 +170,9 @@
 0.0.0.0 tracking.intl.miui.com
 0.0.0.0 sdkconfig.ad.intl.xiaomi.com
 0.0.0.0 foxtel-prod-events.digitalsmiths.net
+
+# Amazon Fire TV: automatic content recognition
+0.0.0.0 gateway-ink.amazon.com
 
 # HbbTV (red button): ad proxy and tracking
 0.0.0.0 redbutton-adproxy-lb-prod.redbutton.de

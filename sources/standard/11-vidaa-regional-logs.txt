@@ -1,0 +1,25 @@
+# VIDAA: regional journal and monetization reporting endpoints
+# Evidence: https://github.com/hagezi/dns-blocklists/issues/11466 (2026-09-14)
+# Exact regional hosts supplement existing AdGuard wildcards for hosts/domain consumers.
+# Regional names were listed by HaGeZi; not every hostname was independently observed.
+ter-jrnl-af.vidaahub.com
+ter-jrnl-as.vidaahub.com
+ter-jrnl-ee.vidaahub.com
+ter-jrnl-la.vidaahub.com
+ter-jrnl-me.vidaahub.com
+ter-jrnl-na.vidaahub.com
+ter-jrnl-oc.vidaahub.com
+ter-jrnl-ru.vidaahub.com
+ter-jrnl-sa.vidaahub.com
+ter-jrnl.vidaahub.com
+exc-jrnl-af.vidaahub.com
+exc-jrnl-as.vidaahub.com
+exc-jrnl-ee.vidaahub.com
+exc-jrnl-la.vidaahub.com
+exc-jrnl-me.vidaahub.com
+exc-jrnl-na.vidaahub.com
+exc-jrnl-oc.vidaahub.com
+exc-jrnl-ru.vidaahub.com
+exc-jrnl-sa.vidaahub.com
+exc-jrnl.vidaahub.com
+rpt-mntz-aws.vidaahub.com
