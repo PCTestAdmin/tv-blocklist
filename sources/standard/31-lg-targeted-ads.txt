@@ -1,0 +1,6 @@
+# LG webOS: targeted advertising and measurement
+# Evidence: https://github.com/hagezi/dns-blocklists/issues/11544 - specific ad/measurement domains retained after LG Channels breakage report.
+ads.lgtvcommon.com
+adts.lgtvcommon.com
+cdpbeacon2.lgtvcommon.com
+videoads.lgtvcommon.com

@@ -2,7 +2,7 @@
 # Description: Standard plus home-screen recommendations, broadcaster HbbTV apps and telemetry of unclear purpose. Removes some features.
 # Homepage: https://github.com/PCTestAdmin/tv-blocklist
 # Version: 2026.11.26
-# Rules: 449
+# Rules: 471
 # License: MIT (see LICENSE for upstream credits)
 
 # Cross-vendor: ACR (automatic content recognition) and TV ad networks
@@ -97,9 +97,14 @@ aic-ngfts.lge.com
 us.cdpbeacon.lgtvcommon.com
 us.cdpsvc.lgtvcommon.com
 us.rdl.lgtvcommon.com
-aic.cdpbeacon.lgtvcommon.com
 aic.cdpsvc.lgtvcommon.com
 aic.rdl.lgtvcommon.com
+
+# LG webOS: targeted advertising and measurement
+ads.lgtvcommon.com
+adts.lgtvcommon.com
+cdpbeacon2.lgtvcommon.com
+videoads.lgtvcommon.com
 
 # Sony Bravia: telemetry
 ad8641f3cff742de893d919add74c2bb.ssm1.internet.sony.tv
@@ -174,6 +179,12 @@ foxtel-prod-events.digitalsmiths.net
 # Amazon Fire TV: automatic content recognition
 gateway-ink.amazon.com
 
+# Amazon Fire TV: device metrics and telemetry
+device-metrics-us-2.amazon.com
+device-metrics-us-ud.amazon.com
+unagi-zaz.amazon.com
+unagi-na.amazon.com
+
 # HbbTV (red button): ad proxy and tracking
 redbutton-adproxy-lb-prod.redbutton.de
 hbbtv-track.redbutton.de
@@ -194,7 +205,6 @@ samba.tv
 social.biv.sony.tv
 sonybivstatic-a.akamaihd.net
 cjpowercast.com
-lgtvcommon.com
 rdx2.nextlgsdp.com
 ibsstat.lgappstv.com
 eic-gfts.lge.com
@@ -245,11 +255,9 @@ api-gps-eu.hismarttv.com
 rpt-ads.vidaahub.com
 rsc-ads.vidaahub.com
 rpt-mntz.vidaahub.com
-rsc-mntz.vidaahub.com
 rpt-mntz-azure.vidaahub.com
 monetization-ad-tracking.prod-eu-c.az.vidaahub.com
 monetization-tenant-ads.prod-eu-c.az.vidaahub.com
-ads-privacy.vidaahub.com
 ad-cmp.hismarttv.com
 ad-imp.hismarttv.com
 ad-download.hismarttv.com
@@ -401,6 +409,30 @@ elastic.lgwebostv.com
 # Connected TV: in-stream ad delivery and impression endpoints
 cdn-media.brightline.tv
 na-ssp-pix.adstk.io
+
+# LG webOS: additional recommendations and configuration
+thinqrecommend.lgtvcommon.com
+wiseconfig.lgtvcommon.com
+
+# Roku: additional ad delivery endpoints
+ads-aka-us-east-1.delivery.roku.com
+ads-aka-us-west-2.delivery.roku.com
+ads-cf-us-east-1.delivery.roku.com
+ads-cf-us-west-2.delivery.roku.com
+ads-us-east-1-cf.delivery.roku.com
+ads-us-east-2.delivery.roku.com
+ads-us-west-2-cf.delivery.roku.com
+ads.z.data.roku.com
+adx.z.data.roku.com
+advertising-v3.roku.com
+
+# Amazon Fire TV: additional ad delivery endpoints
+aax.amazon-adsystem.com
+aax-us.amazon-adsystem.com
+aax-us-east.amazon-adsystem.com
+aax-us-west.amazon-adsystem.com
+aax-fe.amazon-adsystem.com
+mads.amazon.com
 
 # okazakee: strict-only rules
 nbc-jite.nbcuni.com

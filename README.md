@@ -43,7 +43,7 @@ Works with **AdGuard Home**, **Pi-hole** and any DNS blocker that reads hosts or
 
 ## Which list?
 
-| | **Standard** (~300 rules) | **Strict** (~420 rules) |
+| | **Standard** (~330 rules) | **Strict** (~480 rules) |
 |---|:---:|:---:|
 | Home-screen ads and promo banners | ✅ | ✅ |
 | ACR tracking (what you watch) | ✅ | ✅ |

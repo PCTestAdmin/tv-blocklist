@@ -187,3 +187,13 @@ tcllauncher.com
 secure-geolocation.premiumtv.co.uk
 geohawk.co.uk
 ud-prd.geohawk.co.uk
+
+# LG Channels playback compatibility: https://github.com/hagezi/dns-blocklists/issues/11544
+aic.cdplauncher.lgtvcommon.com
+aic.cdpbeacon.lgtvcommon.com
+aic.lgchhomeapp.lgtvcommon.com
+
+# VIDAA Ads Privacy settings: https://github.com/hagezi/dns-blocklists/issues/11466
+ads-privacy.vidaahub.com
+bo.ads-privacy.vidaahub.com
+rsc-mntz.vidaahub.com
