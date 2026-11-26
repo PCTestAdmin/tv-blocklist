@@ -1,0 +1,6 @@
+# Amazon Fire TV: device metrics and telemetry
+# Evidence: https://dumbtv.org/blocked - observed in Fire TV app configurations; no independent device compatibility test.
+device-metrics-us-2.amazon.com
+device-metrics-us-ud.amazon.com
+unagi-zaz.amazon.com
+unagi-na.amazon.com

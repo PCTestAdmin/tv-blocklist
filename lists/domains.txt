@@ -1,8 +1,8 @@
 # Title: TV Blocklist – Standard
 # Description: Smart-TV ads, ACR tracking and telemetry. No known side effects.
 # Homepage: https://github.com/PCTestAdmin/tv-blocklist
-# Version: 2026.11.02
-# Rules: 294
+# Version: 2026.11.26
+# Rules: 320
 # License: MIT (see LICENSE for upstream credits)
 
 # Cross-vendor: ACR (automatic content recognition) and TV ad networks
@@ -29,6 +29,29 @@ dis.inscape.tv
 # Hisense / VIDAA (also Smart Tech, Toshiba): ad recommendations and log upload
 recommend-ui-eu.vidaahub.com
 policy-jrnl-eu.vidaahub.com
+
+# VIDAA: regional journal and monetization reporting endpoints
+ter-jrnl-af.vidaahub.com
+ter-jrnl-as.vidaahub.com
+ter-jrnl-ee.vidaahub.com
+ter-jrnl-la.vidaahub.com
+ter-jrnl-me.vidaahub.com
+ter-jrnl-na.vidaahub.com
+ter-jrnl-oc.vidaahub.com
+ter-jrnl-ru.vidaahub.com
+ter-jrnl-sa.vidaahub.com
+ter-jrnl.vidaahub.com
+exc-jrnl-af.vidaahub.com
+exc-jrnl-as.vidaahub.com
+exc-jrnl-ee.vidaahub.com
+exc-jrnl-la.vidaahub.com
+exc-jrnl-me.vidaahub.com
+exc-jrnl-na.vidaahub.com
+exc-jrnl-oc.vidaahub.com
+exc-jrnl-ru.vidaahub.com
+exc-jrnl-sa.vidaahub.com
+exc-jrnl.vidaahub.com
+rpt-mntz-aws.vidaahub.com
 
 # Vewd (formerly Opera TV) app platform on VIDAA, Philips, Sony and others: logging and metrics
 log.core.cloud.vewd.com
@@ -74,9 +97,14 @@ aic-ngfts.lge.com
 us.cdpbeacon.lgtvcommon.com
 us.cdpsvc.lgtvcommon.com
 us.rdl.lgtvcommon.com
-aic.cdpbeacon.lgtvcommon.com
 aic.cdpsvc.lgtvcommon.com
 aic.rdl.lgtvcommon.com
+
+# LG webOS: targeted advertising and measurement
+ads.lgtvcommon.com
+adts.lgtvcommon.com
+cdpbeacon2.lgtvcommon.com
+videoads.lgtvcommon.com
 
 # Sony Bravia: telemetry
 ad8641f3cff742de893d919add74c2bb.ssm1.internet.sony.tv
@@ -148,6 +176,15 @@ tracking.intl.miui.com
 sdkconfig.ad.intl.xiaomi.com
 foxtel-prod-events.digitalsmiths.net
 
+# Amazon Fire TV: automatic content recognition
+gateway-ink.amazon.com
+
+# Amazon Fire TV: device metrics and telemetry
+device-metrics-us-2.amazon.com
+device-metrics-us-ud.amazon.com
+unagi-zaz.amazon.com
+unagi-na.amazon.com
+
 # HbbTV (red button): ad proxy and tracking
 redbutton-adproxy-lb-prod.redbutton.de
 hbbtv-track.redbutton.de
@@ -168,7 +205,6 @@ samba.tv
 social.biv.sony.tv
 sonybivstatic-a.akamaihd.net
 cjpowercast.com
-lgtvcommon.com
 rdx2.nextlgsdp.com
 ibsstat.lgappstv.com
 eic-gfts.lge.com
@@ -219,11 +255,9 @@ api-gps-eu.hismarttv.com
 rpt-ads.vidaahub.com
 rsc-ads.vidaahub.com
 rpt-mntz.vidaahub.com
-rsc-mntz.vidaahub.com
 rpt-mntz-azure.vidaahub.com
 monetization-ad-tracking.prod-eu-c.az.vidaahub.com
 monetization-tenant-ads.prod-eu-c.az.vidaahub.com
-ads-privacy.vidaahub.com
 ad-cmp.hismarttv.com
 ad-imp.hismarttv.com
 ad-download.hismarttv.com

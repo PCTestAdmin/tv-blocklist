@@ -1,0 +1,5 @@
+# Amazon Fire TV: automatic content recognition
+# Evidence: Watching the Watchers (2026), section 5.3 and appendix C.
+# https://watchingthewatchers.github.io/watchingthewatchers/
+# Identified in controlled traffic captures; no independent device blocking test.
+gateway-ink.amazon.com

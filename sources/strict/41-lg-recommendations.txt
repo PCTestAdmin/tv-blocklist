@@ -1,0 +1,4 @@
+# LG webOS: additional recommendations and configuration
+# Evidence: https://github.com/hagezi/dns-blocklists/issues/11544 - recommendation/configuration hosts, strict due to potential feature impact.
+thinqrecommend.lgtvcommon.com
+wiseconfig.lgtvcommon.com

@@ -1,13 +1,17 @@
 ! Title: TV Blocklist – Allowlist
 ! Description: Optional. Unblocks domains TVs need when other, broader lists block them.
 ! Homepage: https://github.com/PCTestAdmin/tv-blocklist
-! Version: 2026.11.02
-! Rules: 242
+! Version: 2026.11.26
+! Rules: 248
 ! License: MIT (see LICENSE for upstream credits)
 
 @@||account.samsung.com^$important
 @@||account.xiaomi.com^$important
 @@||acr0.samsungcloudsolution.com^$important
+@@||ads-privacy.vidaahub.com^$important
+@@||aic.cdpbeacon.lgtvcommon.com^$important
+@@||aic.cdplauncher.lgtvcommon.com^$important
+@@||aic.lgchhomeapp.lgtvcommon.com^$important
 @@||albedo.be.kidoodle.tv^$important
 @@||amazonadsi-a.akamaihd.net^$important
 @@||amzdigital-a.akamaihd.net^$important
@@ -52,6 +56,7 @@
 @@||authbe.sec.intl.miui.com^$important
 @@||avs-alexa-18-na.amazon.com^$important
 @@||avs.eu.amazonalexa.com^$important
+@@||bo.ads-privacy.vidaahub.com^$important
 @@||bravia.dl.playstation.net^$important
 @@||browserjs.core.cloud.vewd.com^$important
 @@||c.pki.goog^$important
@@ -187,6 +192,7 @@
 @@||reg.biv.sony.tv^$important
 @@||resource-launcher.hismarttv.com^$important
 @@||rpm.billing.roku.com^$important
+@@||rsc-mntz.vidaahub.com^$important
 @@||samsungcloud.com^$important
 @@||samsungotn.net^$important
 @@||samsungrm.net^$important

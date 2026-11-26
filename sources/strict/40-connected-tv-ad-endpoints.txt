@@ -1,0 +1,5 @@
+# Connected TV: in-stream ad delivery and impression endpoints
+# Observed on LG TVs: https://github.com/hagezi/dns-blocklists/issues/11412 (2026-09-10)
+# Strict only: blocking ad delivery can interfere with ad-supported playback.
+cdn-media.brightline.tv
+na-ssp-pix.adstk.io
